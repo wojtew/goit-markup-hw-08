@@ -1,15 +1,24 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #212121;
+	font-size: 16px;
+	letter-spacing: 0.03em;
 }
 li {
 	list-style: none;
 }
 /* header */
+.header-bg {
+	background-image: url(/images/bg.jpg);
+	width: 1600px;
+	height: 600px;
+}
 h1 {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 60px;
+	line-height: 136%;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
@@ -18,15 +27,15 @@ h1 {
 .logo-1 {
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
+	font-family: raleway;
+	line-height: 100%;
 	color: #2196f3;
 }
 .logo-2 {
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
+	font-family: raleway;
+	line-height: 100%;
 	color: #000000;
 }
 a {
@@ -42,14 +51,13 @@ a:focus {
 .nav {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 100%;
 	letter-spacing: 0.02em;
-	color: #212121;
 }
 .contacts {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 100%;
 	letter-spacing: 0.02em;
 	color: #757575;
 }
@@ -57,8 +65,7 @@ a:focus {
 	width: 200px;
 	height: 50px;
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 30px;
+	line-height: 188%;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
@@ -73,16 +80,12 @@ a:focus {
 .strengths {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.03em;
+	line-height: 100%;
 	text-transform: uppercase;
-	color: #212121;
 }
 .strengths-des {
-	font-weight: 400;
 	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
+	line-height: 146%;
 	color: #757575;
 }
 /* sekcja 1 */
@@ -90,27 +93,19 @@ a:focus {
 h2 {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: 100%;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: #212121;
 }
 /* skecja 2 */
 /* sekcja 3 */
 .member {
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
+	line-height: 100%;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: #212121;
 }
 .member-job {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
+	line-height: 100%;
 	text-align: center;
-	letter-spacing: 0.03em;
 	color: #757575;
 }
 .member-container {
@@ -127,18 +122,28 @@ h2 {
 	height: 648px;
 }
 /* sekcja 3 */
+/* footer */
+.footer-bg {
+	background-image: url(/images/Footer-bg.jpg);
+	width: 1600px;
+	height: 252px;
+}
+address {
+	font-size: 14px;
+	line-height: 146%;
+	color: #ffffff;
+}
+/* footer */
 /* portfolio */
 .filter {
 	width: 121px;
 	height: 38px;
 	background: #f5f4fa;
+	letter-spacing: 0.03em;
 	border-radius: 4px;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
+	line-height: 139%;
 	text-align: center;
-	letter-spacing: 0.03em;
-	color: #212121;
 	border: 0;
 	cursor: pointer;
 }
@@ -154,16 +159,11 @@ h2 {
 .project-name {
 	font-weight: 700;
 	font-size: 18px;
-	line-height: 36px;
+	line-height: 171%;
 	letter-spacing: 0.06em;
-	color: #212121;
 }
-
 .project-type {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.03em;
+	line-height: 160%;
 	color: #757575;
 }
 .project-container {
