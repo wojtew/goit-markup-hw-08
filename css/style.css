@@ -11,7 +11,7 @@ li {
 }
 /* header */
 .header-bg {
-	background-image: url(/images/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	width: 1600px;
 	height: 600px;
 }
@@ -124,7 +124,7 @@ h2 {
 /* sekcja 3 */
 /* footer */
 .footer-bg {
-	background-image: url(/images/Footer-bg.jpg);
+	background-image: url(../images/Footer-bg.jpg);
 	width: 1600px;
 	height: 252px;
 }
