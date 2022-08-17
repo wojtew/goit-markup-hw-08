@@ -6,7 +6,7 @@ body {
 	font-size: 16px;
 	letter-spacing: 0.03em;
 }
-.li {
+li {
 	list-style: none;
 }
 /* header */
@@ -15,7 +15,7 @@ body {
 	width: 1600px;
 	height: 600px;
 }
-.h1 {
+h1 {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 136%;
@@ -90,7 +90,7 @@ body {
 }
 /* sekcja 1 */
 /* skecja 2 */
-.h2 {
+h2 {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 100%;
