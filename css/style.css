@@ -4,16 +4,14 @@
 	margin: 0;
 }
 header {
-	width: 1600px;
 	height: 80px;
 }
 .section {
 	padding: 94px 0;
-	
 }
 .container {
 	width: 1200px;
-	margin: 0 215px ;
+	margin: 0 215px;
 }
 .flex {
 	display: flex;
@@ -49,20 +47,20 @@ h1 {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-.logo-one {
-	padding-top: 24px;
+.logo {
 	font-weight: 700;
 	font-size: 26px;
 	font-family: raleway;
 	line-height: 100%;
+}
+.one {
 	color: #2196f3;
 }
-.logo-two {
-	font-weight: 700;
-	font-size: 26px;
-	font-family: raleway;
-	line-height: 100%;
+.two {
 	color: #000000;
+}
+.three {
+	color: #FFFFFF;
 }
 .link {
 	text-decoration: none;
@@ -144,8 +142,10 @@ h2 {
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.team {
+.team-color {
 	background-color: #f5f4fa;
+}
+.team {
 	width: 1600px;
 }
 /* sekcja 3 */
@@ -156,10 +156,26 @@ h2 {
 	height: 252px;
 }
 .address {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 0 207px;
 	font-size: 14px;
 	line-height: 146%;
 	color: #ffffff;
 }
+.footer-data {
+	margin-left: 207px;
+	padding-top: 60px;
+}
+.contacts-footer {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0.02em;
+	color: #757575;
+	margin-top: 9px;
+}
+
 /* footer */
 /* portfolio */
 .filter {
