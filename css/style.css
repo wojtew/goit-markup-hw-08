@@ -3,20 +3,37 @@
 	padding: 0;
 	margin: 0;
 }
-header {
-	height: 80px;
+.pos-link {
+	margin-top: 24px;
+	margin-bottom: 25px;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+}
+.logo-flex {
+	margin-top: 24px;
+}
+.nav-pos {
+	margin: 32px 0 0 93px;
 }
 .section {
 	padding: 94px 0;
 }
 .container {
 	width: 1200px;
-	margin: 0 215px;
+	margin-left: 215px;
 }
 .flex {
 	display: flex;
 	justify-content: center;
 	gap: 30px;
+}
+.pos-mail {
+	margin-left: 371px;
+}
+.pos-tel {
+	margin-left: 70px;
 }
 body {
 	font-family: 'Raleway', sans-serif;
@@ -79,6 +96,7 @@ h1 {
 	letter-spacing: 0.02em;
 }
 .contacts {
+	margin-top: 32px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 100%;
