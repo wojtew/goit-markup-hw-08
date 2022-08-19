@@ -80,6 +80,9 @@ h1 {
 .three {
 	color: #FFFFFF;
 }
+a.link {
+	color: #000000;
+}
 .link {
 	text-decoration: none;
 }
