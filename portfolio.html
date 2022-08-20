@@ -10,32 +10,39 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/modern-normalise.css">
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Studio</title>
 	</head>
 	<body>
-		<header>
-			<a class="link" href="./index.html"
-				><span class="logo-1">Web</span><span class="logo-2">Studio</span></a
-			>
-			<nav>
-				<ul>
-					<li class="nav"><a class="link" href="#">Agencja</a></li>
-					<li class="nav"><a class="link" href="./portfolio.html">Portfolio</a></li>
-					<li class="nav"><a class="link" href="#">Kontakt</a></li>
+		<header class="header container">
+			<a class="link" href="./index.html">
+				<span class="logo-1">Web</span><span class="logo-2">Studio
+				</span>
+			</a>
+			<nav class="nav">
+				<ul class="nav-pos">
+					<li class="nav-li"><a class="link" href="#">Agencja</a></li>
+					<li class="nav-li">
+						<a class="link" href="./portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-li"><a class="link" href="#">Kontakt</a></li>
 				</ul>
 			</nav>
-			<div>
-				<a class="contacts" href="mailto:info@devstudio.com"
-					>info@devstudio.com</a
-				>
-				<a class="contacts" href="tel:+48111111111">+48 111 111 111</a>
-			</div>
+			<ul class="cont-pos">
+				<li>
+					<a class="contacts link" href="mailto:info@devstudio.com"
+						>info@devstudio.com</a
+					>
+				</li>
+				<li>
+					<a class="contacts link" href="tel:+48111111111">+48 111 111 111 </a>
+				</li>
+			</ul>
 		</header>
-		<main>
-			<section>
-				<ul>
+		<main class="container">
+			<section class="section">
+				<ul class="filter-pos">
 					<li>
 						<button class="filter" type="button">Wszystkie</button>
 					</li>
@@ -53,8 +60,8 @@
 					</li>
 				</ul>
 			</section>
-			<section>
-				<ul>
+			<section class="section">
+				<ul class="proj-pos">
 					<li>
 						<figure class="project-container">
 							<img
@@ -63,7 +70,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Technocrack</p>
 								<p class="project-type">Strona Interntowa</p>
 							</figcaption>
@@ -77,7 +84,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Grafika New Orlean vs Golden Star</p>
 								<p class="project-type">Dizajn</p>
 							</figcaption>
@@ -91,7 +98,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Restauracja Seafood</p>
 								<p class="project-type">Aplikacja</p>
 							</figcaption>
@@ -105,7 +112,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Projekt Prime</p>
 								<p class="project-type">Marketing</p>
 							</figcaption>
@@ -119,7 +126,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">projekt Boxes</p>
 								<p class="project-type">Aplikacja</p>
 							</figcaption>
@@ -133,7 +140,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Inspiration has no Borders</p>
 								<p class="project-type">Strona Internetowa</p>
 							</figcaption>
@@ -147,7 +154,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Magazyn Limited Edition</p>
 								<p class="project-type">Dizajn</p>
 							</figcaption>
@@ -161,9 +168,9 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Projekt LAB</p>
-								<p class="project-type">marketing</p>
+								<p class="project-type">Marketing</p>
 							</figcaption>
 						</figure>
 					</li>
@@ -175,7 +182,7 @@
 								width="370"
 								height="294"
 							/>
-							<figcaption>
+							<figcaption class="work-pos">
 								<p class="project-name">Growing Business</p>
 								<p class="project-type">Aplikacja</p>
 							</figcaption>
@@ -184,17 +191,18 @@
 				</ul>
 			</section>
 		</main>
-		<footer>
-			<div class="footer-bg">
-				<address class="address">m. Warszawa, Aleje Jerozolimskie 21
-					<a class="link" href="./index.html"
-						><span class="logo-1">Web</span
-						><span class="logo-2">Studio</span></a
-					>
-					<a class="contacts link" href="mailto:info@devstudio.com"
-						>info@devstudio.com</a
-					>
-					<a class="contacts link" href="tel:+48111111111">+48 111 111 111</a>
+		<footer class="footer-bg">
+			<div class="container footer-pos">
+				<a class="logo" href="./index.html">
+					<span class="logo-1">Web</span>
+					<span class="logo-3">Studio</span>
+				</a>
+				<address class="address">
+					m. Warszawa, Aleje Jerozolimskie 21
+						<a class="contacts link" href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						>
+						<a class="contacts link" href="tel:+48111111111">+48 111 111 111</a>
 				</address>
 			</div>
 		</footer>

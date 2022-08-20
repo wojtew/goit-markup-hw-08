@@ -242,6 +242,28 @@ h2 {
 	border-radius: 4px;
 	color: #ffffff;
 }
+.filter-pos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 8px;
+}
+.proj-pos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-bottom: 92px;
+}
+.project-container {
+	width: 370px;
+	height: 404px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+}
+.work-pos {
+	margin: 20px 24px;
+	gap: 4px;
+}
 .project-name {
 	font-weight: 700;
 	font-size: 18px;
@@ -251,11 +273,5 @@ h2 {
 .project-type {
 	line-height: 160%;
 	color: #757575;
-}
-.project-container {
-	width: 370px;
-	height: 404px;
-	background: #ffffff;
-	border: 1px solid #eeeeee;
 }
 /* portfolio */
