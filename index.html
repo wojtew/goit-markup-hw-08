@@ -10,8 +10,8 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/modern-normalise.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/modern-normalise.css" />
 		<title>Studio</title>
 	</head>
 	<body>
@@ -32,14 +32,23 @@
 				<li>
 					<a class="contacts link" href="mailto:info@devstudio.com">
 						<svg class="icon-nav">
-							<use xlink:href="./images/icons.svg#icon-envelope"></use></svg
+							<use href="./images/icons.svg#icon-envelope"
+							width="16"
+							height="12"
+							y="2"
+							></use>
+						</svg
 						>info@devstudio.com</a
 					>
 				</li>
 				<li>
-					<a class="contacts link" href="tel:+48111111111"
-						><svg class="icon-nav">
-							<use xlink:href="./images/icons.svg#icon-smartphone"></use></svg
+					<a class="contacts link" href="tel:+48111111111">
+						<svg class="icon-nav">
+							<use href="./images/icons.svg#icon-smartphone"
+							width="10"
+							height="16"
+							x="3"></use>
+						</svg
 						>+48 111 111 111
 					</a>
 				</li>
@@ -51,68 +60,70 @@
 				<button class="order-button" type="button">Zamów usługę</button>
 			</div>
 			<section class="section">
-				<ul class="container str-list">
-					<li class="str-cont">
-						<svg class="str-box">
-							<use
-								href="./images/icons.svg#icon-antenna"
-								widht="70px"
-								height="70px"
-							></use>
-						</svg>
-						<p class="strengths">Lorem, ipsum.</p>
-						<p class="strengths-des">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-							sint id animi vel, explicabo dolorem quos modi iusto ullam unde?
-						</p>
-					</li>
-					<li class="str-cont">
-						<svg class="str-box">
-							<use
-								href="./images/icons.svg#icon-clock"
-								widht="70px"
-								height="70px"
-							></use>
-						</svg>
-						<p class="strengths">Lorem, ipsum.</p>
-						<p class="strengths-des">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-							cum consequuntur impedit voluptatibus quisquam provident tenetur
-							dolorem hic corrupti sequi.
-						</p>
-					</li>
-					<li class="str-cont">
-						<svg class="str-box">
-							<use class="str-icon"
-								href="./images/icons.svg#icon-diagram"
-								widht="70px"
-								height="70px"
-							></use>
-						</svg>
-
-						<p class="strengths">Lorem, ipsum.</p>
-						<p class="strengths-des">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-							tenetur id nisi esse ut voluptate voluptatum voluptas facilis
-							pariatur repellendus.
-						</p>
-					</li>
-					<li class="str-cont">
-						<svg class="str-box">
-							<use
-								href="./images/icons.svg#icon-astronaut"
-								widht="70px"
-								height="70px"
-							></use>
-						</svg>
-						<p class="strengths">Lorem, ipsum.</p>
-						<p class="strengths-des">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-							rerum voluptate dolore voluptas vitae quod laboriosam nisi tempora
-							non explicabo?
-						</p>
-					</li>
-				</ul>
+				<div class="container">
+					<ul class="str-list">
+						<li class="str-box">
+							<svg class="str-icon">
+								<use href="./images/icons.svg#icon-antenna-1"
+									width="70"
+									height="70"
+									x="100"
+									y="25">
+								</use>
+							</svg>
+							<p class="strengths">Lorem, ipsum.</p>
+							<p class="strengths-des">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+								sint id animi vel, explicabo dolorem.
+							</p>
+						</li>
+						<li>
+							<svg class="str-icon">
+								<use href="./images/icons.svg#icon-clock-1"
+									width="70"
+									height="70"
+									x="100"
+									y="25">
+								</use>
+							</svg>
+							<p class="strengths">Lorem, ipsum.</p>
+							<p class="strengths-des">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+								sint id animi vel, explicabo dolorem.
+							</p>
+						</li>
+						<li>
+							<svg class="str-icon">
+								<use href="./images/icons.svg#icon-diagram-1"
+									width="70"
+									height="70"
+									x="100"
+									y="25">
+								</use>
+							</svg>
+							<p class="strengths">Lorem, ipsum.</p>
+							<p class="strengths-des">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+								sint id animi vel, explicabo dolorem.
+							</p>
+						</li>
+						<li>
+							<svg  class="str-icon">
+								<use href="./images/icons.svg#icon-astronaut-1"
+									width="70"
+									height="70"
+									x="100"
+									y="25">
+							</use>
+							</svg>
+							<p class="strengths">Lorem, ipsum.</p>
+							<p class="strengths-des">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+								sint id animi vel, explicabo dolorem.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="section">
 				<div class="container">
@@ -161,6 +172,51 @@
 									<p class="member">John Doe</p>
 									<p class="member-job">Product Designer</p>
 								</figcaption>
+								<div>
+									<ul class="member-social">
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-instagram-2"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-twitter-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-facebook-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-linkedin-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+									</ul>
+								</div>
 							</figure>
 						</li>
 						<li>
@@ -175,6 +231,51 @@
 									<p class="member">John Doe</p>
 									<p class="member-job">Frontend Developer</p>
 								</figcaption>
+								<div>
+									<ul class="member-social">
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-instagram-2"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-twitter-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-facebook-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-linkedin-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+									</ul>
+								</div>
 							</figure>
 						</li>
 						<li>
@@ -189,6 +290,51 @@
 									<p class="member">John Doe</p>
 									<p class="member-job">Marketing</p>
 								</figcaption>
+								<div>
+									<ul class="member-social">
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-instagram-2"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-twitter-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-facebook-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-linkedin-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+									</ul>
+								</div>
 							</figure>
 						</li>
 						<li>
@@ -203,6 +349,51 @@
 									<p class="member">John Doe</p>
 									<p class="member-job">UI Designer</p>
 								</figcaption>
+								<div>
+									<ul class="member-social">
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-instagram-2"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+											</svg>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-twitter-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-facebook-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+										<li>
+											<svg class="member-social-icon">
+												<use
+													href="./images/icons.svg#icon-linkedin-1"
+													width="20"
+													height="20"
+													x="12"
+													y="12"
+												></use>
+										</li>
+									</ul>
+								</div>
 							</figure>
 						</li>
 					</ul>
@@ -261,27 +452,51 @@
 						<a class="contacts link" href="tel:+48111111111">+48 111 111 111</a>
 					</address>
 				</div>
-				<div class="footer-join">
-					<p class="join">Dołącz do nas</p>
-					<ul class="footer-social">
-						<li class="icon-border">
-							<svg class="footer-icon">
-								<use xlink:href="./images/icons.svg#icon-instagram"></use>
+				<div class="container-footer-social">
+					<p class="join-us">Dołącz do nas</p>
+					<ul class="footer-social-list">
+						<li>
+							<svg class="footer-social-icons">
+								<use
+									href="./images/icons.svg#icon-instagram-2"
+									width="22"
+									height="22"
+									x="11"
+									y="11"
+								></use>
 							</svg>
 						</li>
-						<li class="icon-border">
-							<svg class="footer-icon">
-								<use xlink:href="./images/icons.svg#icon-twitter"></use>
+						<li>
+							<svg class="footer-social-icons">
+								<use
+									href="./images/icons.svg#icon-twitter-1"
+									width="22"
+									height="22"
+									x="11"
+									y="11"
+								></use>
 							</svg>
 						</li>
-						<li class="icon-border">
-							<svg class="footer-icon">
-								<use xlink:href="./images/icons.svg#icon-facebook"></use>
+						<li>
+							<svg class="footer-social-icons">
+								<use
+									href="./images/icons.svg#icon-facebook-1"
+									width="22"
+									height="22"
+									x="11"
+									y="11"
+								></use>
 							</svg>
 						</li>
-						<li class="icon-border">
-							<svg class="footer-icon">
-								<use xlink:href="./images/icons.svg#icon-linkedin"></use>
+						<li>
+							<svg class="footer-social-icons">
+								<use
+									href="./images/icons.svg#icon-linkedin-1"
+									width="22"
+									height="22"
+									x="11"
+									y="11"
+								></use>
 							</svg>
 						</li>
 					</ul>
