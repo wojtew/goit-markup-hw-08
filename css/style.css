@@ -41,9 +41,9 @@ li {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
-	background-image: url(../images/bg.jpg);
-	background-color: rgba(47, 48, 58, 0.4);
-	box-shadow: 0 4px 4px rgba(47, 48, 58, 40);
+	background-image: url(/images/bg.jpg);
+	background-color: rgba(47, 48, 58, 40%);
+	background-blend-mode: darken;
 	width: 100%;
 	height: 600px;
 }
@@ -74,14 +74,7 @@ h1 {
 .link {
 	text-decoration: none;
 }
-/* .blue:hover,
-.blue:focus {
-	fill: #2196f3;
-} */
-/* .icon-nav:hover,
-.icon-nav:focus {
-	fill: #2196f3;
-} */
+
 .icon-nav {
 	width: 16px;
 	height: 16px;
