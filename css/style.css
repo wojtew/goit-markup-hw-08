@@ -31,11 +31,6 @@ li {
 	border-bottom: 1px solid #ececec;
 	gap: 93px;
 }
-.icon-nav {
-	width: 16px;
-	height: 16px;
-	fill: #757575;
-}
 .nav-pos {
 	display: flex;
 	gap: 46px;
@@ -79,15 +74,24 @@ h1 {
 .link {
 	text-decoration: none;
 }
+/* .blue:hover,
+.blue:focus {
+	fill: #2196f3;
+} */
+/* .icon-nav:hover,
+.icon-nav:focus {
+	fill: #2196f3;
+} */
+.icon-nav {
+	width: 16px;
+	height: 16px;
+}
 .link:visited {
 	color: #212121;
 }
 .link:hover,
 .link:focus {
 	color: #2196f3;
-}
-.icon-nav:hover,
-.icon-nav:focus {
 	fill: #2196f3;
 }
 .nav {
@@ -109,6 +113,7 @@ h1 {
 	line-height: 100%;
 	letter-spacing: 0.02em;
 	color: #757575;
+	fill: #757575;
 }
 .cont-pos {
 	display: flex;
@@ -152,7 +157,7 @@ h1 {
 .str-icon {
 	width: 270px;
 	height: 120px;
-	background-color: #F5F4FA;
+	background-color: #f5f4fa;
 	margin-bottom: 30px;
 }
 /* sekcja 1 */
