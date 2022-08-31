@@ -20,9 +20,12 @@ li {
 	width: 1200px;
 }
 .section {
-	padding: 94px 0 0;
+	padding-top: 94px;
 }
 /* header */
+.active-site {
+	color: #2196f3;
+}
 .header {
 	justify-content: space-between;
 	display: flex;
@@ -30,10 +33,6 @@ li {
 	padding: 24px 0 25px 0;
 	border-bottom: 1px solid #ececec;
 	gap: 93px;
-}
-.nav-pos {
-	display: flex;
-	gap: 46px;
 }
 .header-bg {
 	display: flex;
@@ -89,6 +88,10 @@ h1 {
 .nav {
 	display: flex;
 	align-items: center;
+}
+.nav-pos {
+	display: flex;
+	gap: 46px;
 }
 .nav-li {
 	font-weight: 500;
@@ -214,6 +217,7 @@ h2 {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	cursor: pointer;
 }
 .member-social-icon:hover,
 .member-social-icon:focus {
@@ -240,6 +244,7 @@ h2 {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	fill: #afb1b8;
+	cursor: pointer;
 }
 .partner-box:hover {
 	fill: #2196f3;
