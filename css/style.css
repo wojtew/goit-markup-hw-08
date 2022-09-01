@@ -22,16 +22,23 @@ li {
 .section {
 	padding-top: 94px;
 }
+.pos-relative {
+	position: relative;
+	overflow: hidden;
+}
 /* header */
 .active-site {
 	color: #2196f3;
 }
-.active {
+.active::after {
 	content: '';
+	display: block;
 	width: 58px;
 	height: 4px;
 	background-color: #2196f3;
 	border-radius: 2px;
+	position: relative;
+	top: 29px;
 }
 .header {
 	justify-content: space-between;
@@ -79,7 +86,7 @@ h1 {
 }
 .link {
 	text-decoration: none;
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-nav {
 	width: 16px;
@@ -181,14 +188,18 @@ h2 {
 	gap: 30px;
 	padding-bottom: 94px;
 }
-.qwe {
-	position: relative;
-}
-.asd {
+
+.job-description {
 	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 370px;
+	height: 70px;
+	background-color: rgba(47, 48, 58, 80%);
 	color: white;
-	bottom: 27px;
-	left: 90px;
 }
 /* skecja 2 */
 /* sekcja 3 */
@@ -235,7 +246,7 @@ h2 {
 	height: 44px;
 	border-radius: 50%;
 	cursor: pointer;
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-social-icon:hover,
 .member-social-icon:focus {
@@ -263,6 +274,7 @@ h2 {
 	border-radius: 4px;
 	fill: #afb1b8;
 	cursor: pointer;
+	transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partner-box:hover {
 	fill: #2196f3;
@@ -322,7 +334,7 @@ h2 {
 	width: 44px;
 	height: 44px;
 	cursor: pointer;
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icons:hover,
 .footer-social-icons:focus {
@@ -349,13 +361,12 @@ h2 {
 	border: 0;
 	cursor: pointer;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter:hover,
 .filter:focus,
 .filter:active {
 	background: #2196f3;
-	border-radius: 4px;
 	color: #ffffff;
 }
 .filter-pos {
@@ -375,7 +386,31 @@ h2 {
 	height: 404px;
 	background: #ffffff;
 	border: 1px solid #eeeeee;
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 294px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(33, 150, 243, 90%);
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pos-relative:hover .overlay {
+	transform: translateY(0);
+}
+.overlay p {
+	padding: 0 35px;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 156%;
+	letter-spacing: 0.03em;
 }
 .project-container:hover,
 .project-container:focus {
