@@ -92,6 +92,7 @@ h1 {
 }
 .link {
 	text-decoration: none;
+	color: #000000;
 	transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -481,6 +482,7 @@ h2 {
 
 /* modal */
 .modal-text {
+	margin-bottom: 10px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
@@ -488,17 +490,25 @@ h2 {
 	color: #757575;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+
+.modal-icon-position {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	display: inline-block;
+	bottom: 11px;
+	margin-left: 12px;
 }
 form {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
 }
 .agrement {
-	gap: 8px;
-	margin: 0 auto;
 	display: flex;
 	flex-flow: row-reverse nowrap;
+	gap: 8px;
 }
 .submit-btn {
 	margin-top: 28px;
@@ -522,9 +532,12 @@ form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+
 }
 .input-modal {
+	padding-left: 42px;
+	display: inline-block;
+	margin-top: 4px;
 	width: 448px;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -537,10 +550,10 @@ h4 {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
-	padding: 40px 0 12px 0;
+	padding: 39px 0 12px 0;
 }
 .agrement p {
-	padding-top: 20px;
+
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 171%;
@@ -548,7 +561,17 @@ h4 {
 	color: #757575;
 }
 .checkbox {
-	padding-top: 20px;
+	display: flex;
+	align-self: center;
 	width: 16px;
 	height: 15px;
+}
+.textarea-modal {
+	padding-left: 16px;
+	padding-top: 12px;
+	margin-top: 4px;
+	resize: none;
+	width: 448px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
 }
