@@ -22,7 +22,9 @@
 			<nav class="nav">
 				<ul class="nav-pos">
 					<li class="nav-li">
-						<a class="link active" href="./index.html"><span class="active-site">Agencja</span></a>
+						<a class="link active" href="./index.html"
+							><span class="active-site">Agencja</span></a
+						>
 					</li>
 					<li class="nav-li">
 						<a class="link" href="./portfolio.html">Portfolio</a>
@@ -527,6 +529,35 @@
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<h4>Zostaw swoje dane w formularzu poniżej</h4>
+				<form class="form">
+					<label class="modal-text">
+						imie
+						<input class="input-modal" type="text" name="username" required/>
+					</label>
+					<label class="modal-text">
+						Telefon
+						<input class="input-modal" type="text" name="phone-number" required/>
+					</label>
+					<label class="modal-text">
+						Email
+						<input class="input-modal" type="text" name="email" required/>
+					</label>
+					<label class="modal-text">
+						Komentarz
+						<textarea class="input-modal" type="text" name="comment" rows="5" placeholder="Wprowadź tekst" required/>
+					</label>
+					<label class="agrement">
+						<p>
+							Oświadczam iż akcpetuje
+							<span class="blue-text"> Regulamin</span> i
+							<span class="blue-text">Polityke Prywatności</span>
+						</p>
+						<input class="checkbox" type="checkbox" name="user-agrement" required />
+					</label>
+					<button class="submit-btn" type="submit">Wyślij</button>
+				</form>
+
 				<button type="button" class="close-btn" data-modal-close>X</button>
 			</div>
 		</div>
