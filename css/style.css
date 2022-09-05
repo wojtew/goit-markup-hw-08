@@ -348,6 +348,37 @@ h2 {
 .container-footer-social {
 	margin-top: 72px;
 }
+.newsletter-box {
+	display: flex;
+	gap: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.newsletter-box input {
+	background-color: rgba(47, 48, 58, 1);
+	padding-left: 16px;
+	width: 258px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 125%;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+/* .newsletter-btn {
+
+}
+.newsletter-submit-icon {
+
+} */
 /* footer */
 /* portfolio */
 .filter {
@@ -501,10 +532,6 @@ h2 {
 	bottom: 11px;
 	margin-left: 12px;
 }
-form {
-	display: flex;
-	flex-direction: column;
-}
 .agrement {
 	display: flex;
 	flex-flow: row-reverse nowrap;
@@ -528,11 +555,11 @@ form {
 	border-radius: 4px;
 	border: none;
 }
-.form {
+.modal-input-positions {
 	display: flex;
+	flex-direction:column;
 	justify-content: center;
 	align-items: center;
-
 }
 .input-modal {
 	padding-left: 42px;
@@ -543,6 +570,14 @@ form {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 }
+.input-modal:focus,
+.input-modal:active,
+.textarea-modal:active,
+.textarea-modal:focus {
+	outline-style: none;
+	outline-color: transparent;
+	border-color: #2196f3;
+}
 h4 {
 	font-weight: 700;
 	font-size: 20px;
@@ -552,8 +587,7 @@ h4 {
 	color: #212121;
 	padding: 39px 0 12px 0;
 }
-.agrement p {
-
+.agrement span {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 171%;
