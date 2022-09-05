@@ -524,7 +524,7 @@ h2 {
 	position: relative;
 }
 
-.modal-icon-position {
+.modal-icon {
 	width: 18px;
 	height: 18px;
 	position: absolute;
@@ -575,8 +575,11 @@ h2 {
 .textarea-modal:active,
 .textarea-modal:focus {
 	outline-style: none;
-	outline-color: transparent;
 	border-color: #2196f3;
+}
+.input-modal:focus + .modal-icon,
+.input-modal:active + .modal-icon {
+	fill: #2196f3;
 }
 h4 {
 	font-weight: 700;

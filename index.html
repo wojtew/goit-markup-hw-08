@@ -551,14 +551,15 @@
 				<form class="modal-input-positions">
 					<label class="modal-text">
 						Imie
-						<svg class="modal-icon-position">
+						<input class="input-modal" type="text" name="username" required />
+						<svg class="modal-icon">
 							<use
 								href="/images/icons.svg#icon-person"
 								height="18"
 								width="18"
 							></use>
 						</svg>
-						<input class="input-modal" type="text" name="username" required />
+						
 					</label>
 					<label class="modal-text">
 						Telefon
@@ -568,7 +569,7 @@
 							name="phone-number"
 							required
 						/>
-						<svg class="modal-icon-position">
+						<svg class="modal-icon">
 							<use
 								href="/images/icons.svg#icon-phone"
 								height="18"
@@ -579,13 +580,13 @@
 					<label class="modal-text">
 						Email
 						<input class="input-modal" type="text" name="email" required />
-						<svg class="modal-icon-position">
-							<use
-								href="/images/icons.svg#icon-email"
-								height="18"
-								width="18"
-							></use>
-						</svg>
+							<svg class="modal-icon">
+								<use
+									href="/images/icons.svg#icon-email"
+									height="18"
+									width="18"
+								</use>
+							</svg>
 					</label>
 					<label class="modal-text">
 						Komentarz
@@ -601,11 +602,11 @@
 					<label class="agrement">
 						<span>
 							Oświadczam iż akcpetuje
-							<span class="blue-text"
+							<span
 								><a class="blue-text" href="#">Regulamin</a></span
 							>
 							i
-							<span class="blue-text"
+							<span
 								><a class="blue-text" href="#">Polityke Prywatności</a></span
 							>
 						</span>
