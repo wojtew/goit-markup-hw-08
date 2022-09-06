@@ -319,6 +319,7 @@ h2 {
 	gap: 70px;
 }
 .join-us {
+	margin-top: 72px;
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
@@ -345,12 +346,8 @@ h2 {
 	display: flex;
 	gap: 10px;
 }
-.container-footer-social {
-	margin-top: 72px;
-}
-.newsletter-box {
-	display: flex;
-	gap: 20px;
+.newsletter-container p {
+	margin: 72px 0 20px 0;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
@@ -358,27 +355,47 @@ h2 {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-.newsletter-box input {
-	background-color: rgba(47, 48, 58, 1);
-	padding-left: 16px;
-	width: 258px;
+.newsletter-form {
+	display: flex;
+	gap: 20px;
+}
+.newsletter-form button {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	gap: 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	fill: white;
+	width: 200px;
 	height: 50px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	border: none;
+}
+.newsletter-form input {
+	padding-left: 16px;
+	width: 358px;
+	height: 50px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 125%;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
-}
-/* .newsletter-btn {
-
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: rgba(47, 48, 58, 1);
 }
 .newsletter-submit-icon {
-
-} */
+	width: 24px;
+	height: 24px;
+}
 /* footer */
 /* portfolio */
 .filter {
@@ -531,6 +548,7 @@ h2 {
 	display: inline-block;
 	bottom: 11px;
 	margin-left: 12px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agrement {
 	display: flex;
@@ -557,7 +575,7 @@ h2 {
 }
 .modal-input-positions {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -569,6 +587,7 @@ h2 {
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-modal:focus,
 .input-modal:active,

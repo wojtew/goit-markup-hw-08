@@ -476,7 +476,7 @@
 						<a class="contacts link" href="tel:+48111111111">+48 111 111 111</a>
 					</address>
 				</div>
-				<div class="container-footer-social">
+				<div>
 					<p class="join-us">Dołącz do nas</p>
 					<ul class="footer-social-list">
 						<li>
@@ -525,24 +525,23 @@
 						</li>
 					</ul>
 				</div>
-				<form>
-					<label class="newsletter-box"
-						><span> ZAPISZ SIĘ DO NEWSLETTERA</span>
-						<input type="text" name="email" placeholder="E-mail" required />
-					</label>
-					<button class="newsletter-btn" type="submit">
-						Zapisz się
-						<svg class="newsletter-submit-icon">
-							<use
+				<div class="newsletter-container">
+					<p>ZAPISZ SIĘ DO NEWSLETTERA </p>
+					<form class="newsletter-form">
+						<input type="text" placeholder="E-mail" name="email" required>
+						<button type="submit">
+							<span>Zapisz się</span>
+							<svg class="newsletter-submit-icon">
+								<use
 								href="/images/icons.svg#icon-send"
 								height="24"
 								width="24"
-								y="13"
-								x="24"
-							></use>
-						</svg>
-					</button>
-				</form>
+								></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -619,7 +618,6 @@
 					</label>
 					<button class="submit-btn" type="submit">Wyślij</button>
 				</form>
-
 				<button type="button" class="close-btn" data-modal-close>X</button>
 			</div>
 		</div>
