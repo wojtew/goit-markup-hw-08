@@ -22,9 +22,7 @@ li {
 .section {
 	padding: 94px 0 0;
 }
-.pos-relative {
-	position: relative;
-}
+
 /* header */
 .navigation--active-site {
 	color: #2196f3;
@@ -49,7 +47,7 @@ li {
 	gap: 93px;
 }
 
-.header-bg {
+.background {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -60,6 +58,20 @@ li {
 	box-shadow: 0 4px 4px rgba(47, 48, 58, 40%);
 	width: 100%;
 	height: 600px;
+}
+.background__order-button {
+	width: 200px;
+	height: 50px;
+	font-weight: 700;
+	line-height: 188%;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	cursor: pointer;
 }
 h1 {
 	text-align: center;
@@ -135,39 +147,26 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
-.order-button {
-	width: 200px;
-	height: 50px;
-	font-weight: 700;
-	line-height: 188%;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.06em;
-	color: #ffffff;
-	background: #2196f3;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	cursor: pointer;
-}
+
 /* header */
 /* sekcja 1 */
-.str-list {
+.strengths__list {
 	display: flex;
 	gap: 30px;
 }
-.strengths {
+.strengths__title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 100%;
 	text-transform: uppercase;
 }
-.strengths-des {
+.strengths__description {
 	margin-top: 10px;
 	font-size: 14px;
 	line-height: 146%;
 	color: #757575;
 }
-.str-icon {
+.strengths__list--icon {
 	width: 270px;
 	height: 120px;
 	background-color: #f5f4fa;
@@ -185,13 +184,13 @@ h2 {
 .shadow {
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
 }
-.job-pos {
+.jobs {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	padding-bottom: 94px;
 }
-.job-description {
+.jobs__description {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -203,20 +202,23 @@ h2 {
 	background-color: rgba(47, 48, 58, 80%);
 	color: white;
 }
+.jobs__position {
+	position: relative;
+}
 /* skecja 2 */
 /* sekcja 3 */
-.name-pos {
+.team__member--position {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	padding-top: 30px;
 }
-.member {
+.team__member-name {
 	font-weight: 500;
 	line-height: 100%;
 	text-align: center;
 }
-.member-job {
+.team__member-job {
 	line-height: 100%;
 	text-align: center;
 	color: #757575;
@@ -225,7 +227,7 @@ h2 {
 	width: 20px;
 	height: 20px;
 }
-.member-container {
+.team__member {
 	width: 270px;
 	height: 428px;
 	background: #ffffff;
@@ -238,11 +240,11 @@ h2 {
 	width: 100%;
 	height: 648px;
 }
-.team-pos {
+.team__position {
 	display: flex;
 	gap: 30px;
 }
-.member-social-icon {
+.team__member-social--icon {
 	fill: #afb1b8;
 	width: 44px;
 	height: 44px;
@@ -250,12 +252,12 @@ h2 {
 	transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	cursor: pointer;
 }
-.member-social-icon:hover,
-.member-social-icon:focus {
+.team__member-social--icon:hover,
+.team__member-social--icon:focus {
 	background-color: #2196f3;
 	fill: white;
 }
-.member-social {
+.team__member-social {
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
