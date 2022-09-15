@@ -1,0 +1,29 @@
+@import './utils/variables';
+@import './components/header';
+@import './components/index-main';
+@import './components/footer';
+@import './components/modal';
+@import './components/portfolio-main';
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1600px;
+	margin: 0 auto;
+    letter-spacing: 0.03em;
+    font-weight: getfont-weight ('normal');
+    font-size: getfont-size ('bolder');
+    letter-spacing: 0.03em;
+    color: $fontmainColor;
+    list-style: none;
+}
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+.section {
+	padding: 94px 0 0;
+}

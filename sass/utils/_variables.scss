@@ -1,0 +1,73 @@
+
+
+// colors
+$fontmainColor: rgb(33, 33, 33);
+$activeColor: rgb(33, 150, 243);
+$headerborderColor: rgb(236, 236, 236);
+$shadowbackgroundColor: rgba(47, 48, 58, 40%);
+$secondaryfontColor: rgb(255, 255, 255);
+$shadowbuttonColor: rgba(0, 0, 0, 0.15);
+$logoblackColor: rgb(0, 0, 0);
+$contactsColor: rgb(117, 117, 117);
+$backgroundiconColor: rgb(245, 245, 250);
+$shadowteamColor: rgba(0, 0, 0, 25%);
+$descriptionColor: rgba(47, 48, 58, 80%);
+$membercontainershadow1: rgba(0, 0, 0, 0.12);
+$membercontainershadow2: rgba(0, 0, 0, 0.14);
+$membercontainershadow3: rgba(0, 0, 0, 0.2);
+$socialiconColor:  rgb(175, 177, 184);
+$footerColor:  rgb(47, 48, 58);
+$footercontactsColor: rgba(255, 255, 255, 0.6);
+$footericonsbackgroundColor: rgba(255, 255, 255, 0.102);
+$newsletterinputborderColor: rgba(255, 255, 255, 0.3);
+$newslettershadowColor: rgba(47, 48, 58, 1);
+$carditemColor: rgb(238, 238, 238);
+$carditemhoverColor1: rgba(0, 0, 0, 0.12);
+$carditemhoverColor2: rgba(0, 0, 0, 0.06);
+$carditemhoverColor3: rgba(0, 0, 0, 0.16);
+$backgroundbackdropColor: rgba(0, 0, 0, 0.1);
+$modalinputColor: rgba(33, 33, 33, 0.2);
+// colors
+// fonts
+$font-weight: (
+    'normal': 400,
+    'medium': 500,
+    'bold': 700,
+    'bolder': 900,
+);
+@function getfont-weight($key) {
+  @return map-get($font-weights, $key);
+}
+$font-size: (
+    'light': 12px,
+    'normal': 14px,
+    'bolder': 16px,
+    'overlay' 18px,
+    'h4': 20px,
+    'logo': 26px,
+    'h2': 36px,
+    'h1': 44px,
+);
+@function getfont-size($key) {
+  @return map-get($font-size, $key);
+}
+$normal-font: "raleway", sans-serif;
+$logo-font: "Roboto", sans-serif;
+// fonts
+// mixins
+@mixin flexCenter ($direction) {
+    display: flex;
+	flex-direction: $direction;
+	justify-content: center;
+	align-items: center;
+}
+@mixin Flexdirection ($direction) {
+    display: flex;
+	flex-direction: $direction;
+}
+@mixin hover($background-color, $color, $fill) {
+    background-color: $background-color ;
+    color: $color ;
+    fill: $fill;
+}
+// mixins
