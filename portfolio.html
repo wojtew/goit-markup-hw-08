@@ -11,7 +11,9 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/modern-normalise.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+			<link rel="stylesheet" href="./css/modern-normalise.css" />
+		<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+		<link rel="stylesheet" href="./css/main.css">
 		<title>Studio</title>
 	</head>
 	<body>
@@ -23,7 +25,7 @@
 				<ul class="navigation__list">
 					<li class="navigation__list-item">
 						<a class="link" href="./index.html"
-							><span class="navigation--active-site">Agencja</span></a
+							><span class="link">Agencja</span></a
 						>
 					</li>
 					<li class="navigation__list-item">
@@ -34,7 +36,7 @@
 			</nav>
 			<ul class="contacts">
 				<li>
-					<a class="contacts__link link" href="mailto:info@devstudio.com">
+					<a class="contacts__link header__link" href="mailto:info@devstudio.com">
 						<svg class="contacts__link--icon">
 							<use
 								href="./images/icons.svg#icon-envelope"
@@ -46,7 +48,7 @@
 					>
 				</li>
 				<li>
-					<a class="contacts__link link" href="tel:+48111111111">
+					<a class="contacts__link header__link" href="tel:+48111111111">
 						<svg class="contacts__link--icon">
 							<use
 								href="./images/icons.svg#icon-smartphone"
@@ -266,26 +268,25 @@
 				</section>
 			</div>
 		</main>
-		<footer class="footer-bg">
-			<div class="container footer-cont">
-				<div class="footer-pos">
-					<a class="logo" href="./index.html">
-						<span class="logo-1">Web</span>
-						<span class="logo-3">Studio</span>
-					</a>
-					<address class="address">
-						m. Warszawa, Aleje Jerozolimskie 21
-						<a class="contacts link" href="mailto:info@devstudio.com"
-							>info@devstudio.com</a
-						>
-						<a class="contacts link" href="tel:+48111111111">+48 111 111 111</a>
-					</address>
-				</div>
-				<div class="container-footer-social">
+		<footer class="footer">
+			<div class="footer__contacts">
+				<a class="logo" href="./index.html">
+					<span class="header--logo-one">Web</span>
+					<span class="logo--three">Studio</span>
+				</a>
+				<address class="address">
+					m. Warszawa, Aleje Jerozolimskie 21
+					<a class="adress__contacts address__link" href="mailto:info@devstudio.com"
+						>info@devstudio.com</a
+					>
+					<a class="adress__contacts address__link" href="tel:+48111111111">+48 111 111 111</a>
+				</address>
+			</div>
+			<div>
 					<p class="join-us">Dołącz do nas</p>
-					<ul class="footer-social-list">
+					<ul class="social-list">
 						<li>
-							<svg class="footer-social-icons">
+							<svg class="social-list--icons">
 								<use
 									href="./images/icons.svg#icon-instagram-2"
 									width="22"
@@ -296,7 +297,7 @@
 							</svg>
 						</li>
 						<li>
-							<svg class="footer-social-icons">
+							<svg class="social-list--icons">
 								<use
 									href="./images/icons.svg#icon-twitter-1"
 									width="22"
@@ -307,7 +308,7 @@
 							</svg>
 						</li>
 						<li>
-							<svg class="footer-social-icons">
+							<svg class="social-list--icons">
 								<use
 									href="./images/icons.svg#icon-facebook-1"
 									width="22"
@@ -318,7 +319,7 @@
 							</svg>
 						</li>
 						<li>
-							<svg class="footer-social-icons">
+							<svg class="social-list--icons">
 								<use
 									href="./images/icons.svg#icon-linkedin-1"
 									width="22"
@@ -329,8 +330,25 @@
 							</svg>
 						</li>
 					</ul>
-				</div>
 			</div>
+
+			<div class="newsletter">
+					<p>ZAPISZ SIĘ DO NEWSLETTERA</p>
+					<form class="newsletter__form">
+						<input type="text" placeholder="E-mail" name="email" required>
+						<button type="submit">
+							<span>Zapisz się</span>
+							<svg class="newsletter__submit-icon">
+								<use
+								href="./images/icons.svg#icon-send"
+								height="24"
+								width="24"
+								></use>
+							</svg>
+						</button>
+					</form>
+			</div>
+
 		</footer>
 	</body>
 </html>

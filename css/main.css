@@ -389,6 +389,100 @@
   fill: #2196f3;
 }
 
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+.filter__button {
+  width: 121px;
+  height: 38px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 139%;
+  letter-spacing: 0.03em;
+  background-color: rgb(245, 245, 250);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow, color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter__button:focus, .filter__button:hover, .filter__button:active {
+  background-color: rgb(33, 150, 243);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.card__item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(238, 238, 238);
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__item:hover {
+  box-shadow: 0px 1px 1p rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card__item:hover .card__item--overlay {
+  transform: translateY(0);
+}
+.card__item img {
+  display: block;
+}
+.card__item--overlay {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgb(33, 150, 243);
+}
+.card__item--overlay p {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  padding: 0 35px;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 24px 20px;
+  gap: 4px;
+  z-index: 3;
+  background-color: rgb(255, 255, 255);
+}
+.card__description h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+.card__description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.03em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -410,7 +504,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1600px;
+  width: 1200px;
 }
 
 .section {

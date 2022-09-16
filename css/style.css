@@ -452,27 +452,7 @@ h2 {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card__description {
-	display: flex;
-	flex-direction: column;
-	gap: 4px;
-	padding: 24px 20px;
-	position: relative;
-	z-index: 3;
-	background-color: white;
-}
-.card__description h3 {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 200%;
-	letter-spacing: 0.06em;
-}
-.card__description p {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 188%;
-	letter-spacing: 0.03em;
-}
+
 .card__item img {
 	display: block;
 }
@@ -498,6 +478,27 @@ h2 {
 }
 .card__item:hover .card__item--overlay {
 	transform: translateY(0);
+}
+.card__description {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 24px 20px;
+	position: relative;
+	z-index: 3;
+	background-color: white;
+}
+.card__description h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 200%;
+	letter-spacing: 0.06em;
+}
+.card__description p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 188%;
+	letter-spacing: 0.03em;
 }
 /* portfolio */
 /* modal */
