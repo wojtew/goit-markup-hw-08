@@ -513,15 +513,6 @@ h2 {
 	opacity: 1;
 	visibility: visible;
 }
-.modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 528px;
-	min-height: 581px;
-	background-color: #fff;
-}
 .close-btn {
 	position: absolute;
 	top: 8px;
@@ -541,8 +532,35 @@ h2 {
 }
 /* modal */
 /* inside modal */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 528px;
+	min-height: 581px;
+	background-color: #fff;
+}
+.modal__agrement {
+	display: flex;
+	flex-flow: row-reverse nowrap;
+	gap: 8px;
+}
 .modal__agrement--blue-text {
 	color: #2196f3;
+}
+.modal__agrement span {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 171%;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+.modal__agrement--checkbox {
+	display: flex;
+	align-self: center;
+	width: 16px;
+	height: 15px;
 }
 .modal__text {
 	margin-bottom: 10px;
@@ -554,22 +572,6 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-}
-
-.modal__input--icon {
-	width: 18px;
-	height: 18px;
-	position: absolute;
-	bottom: 11px;
-	margin-left: 12px;
-	fill: #000000;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.modal__agrement {
-	display: flex;
-	flex-flow: row-reverse nowrap;
-	gap: 8px;
 }
 .submit-btn {
 	margin-top: 28px;
@@ -606,6 +608,15 @@ h2 {
 	border-radius: 4px;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__input--icon {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	bottom: 11px;
+	margin-left: 12px;
+	fill: #000000;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal__input:focus,
 .modal__input:active,
 .modal__textarea:active,
@@ -625,19 +636,6 @@ h4 {
 	letter-spacing: 0.03em;
 	color: #212121;
 	padding: 39px 0 12px 0;
-}
-.modal__agrement span {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 171%;
-	letter-spacing: 0.03em;
-	color: #757575;
-}
-.modal__agrement--checkbox {
-	display: flex;
-	align-self: center;
-	width: 16px;
-	height: 15px;
 }
 .modal__textarea {
 	padding-left: 16px;
