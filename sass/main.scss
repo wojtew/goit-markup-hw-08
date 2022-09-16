@@ -1,3 +1,4 @@
+
 @import './utils/variables';
 @import './components/header';
 @import './components/index-main';
@@ -8,17 +9,19 @@
 * {
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+
 }
 body {
-    width: 1600px;
+	width: 1600px;
 	margin: 0 auto;
-    letter-spacing: 0.03em;
-    font-weight: getfont-weight ('normal');
-    font-size: getfont-size ('bolder');
-    letter-spacing: 0.03em;
-    color: $fontmainColor;
-    list-style: none;
+	letter-spacing: 0.03em;
+	font-weight: getfont-weight ('normal');
+	font-size: getfont-size ('bolder');
+	letter-spacing: 0.03em;
+	color: $fontmainColor;
+	font-family: $normal-font;
 }
 .container {
 	margin: 0 auto;
@@ -27,3 +30,30 @@ body {
 .section {
 	padding: 94px 0 0;
 }
+h1 {
+	text-align: center;
+	align-items: center;
+	font-weight: getfont-weight ('bolder');
+	font-size: getfont-size ('h1');
+	line-height: 136%;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: $secondaryfontColor;
+}
+h2 {
+	font-weight: getfont-weight ('bold');
+	font-size: getfont-size ('h2');
+	line-height: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+h4 {
+	font-weight: getfont-weight ('bold');
+	font-size: getfont-size ('h4');
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $fontmainColor;
+	padding: 39px 0 12px 0;
+}
+

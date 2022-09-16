@@ -1,5 +1,4 @@
 
-
 // colors
 $fontmainColor: rgb(33, 33, 33);
 $activeColor: rgb(33, 150, 243);
@@ -35,39 +34,33 @@ $font-weight: (
     'bold': 700,
     'bolder': 900,
 );
-@function getfont-weight($key) {
-  @return map-get($font-weights, $key);
-}
+
 $font-size: (
     'light': 12px,
     'normal': 14px,
     'bolder': 16px,
-    'overlay' 18px,
+    'overlay': 18px,
     'h4': 20px,
     'logo': 26px,
     'h2': 36px,
     'h1': 44px,
 );
-@function getfont-size($key) {
-  @return map-get($font-size, $key);
-}
-$normal-font: "raleway", sans-serif;
-$logo-font: "Roboto", sans-serif;
+$normal-font: "Roboto", sans-serif;
+$logo-font: "raleway", sans-serif;
 // fonts
 // mixins
-@mixin flexCenter ($direction) {
+@mixin flexcenter ($direction) {
     display: flex;
-	flex-direction: $direction;
 	justify-content: center;
 	align-items: center;
+	flex-direction: $direction;
 }
-@mixin Flexdirection ($direction) {
+@mixin flexdirection ($direction) {
     display: flex;
 	flex-direction: $direction;
 }
-@mixin hover($background-color, $color, $fill) {
+@mixin hover($background-color, $color) {
     background-color: $background-color ;
     color: $color ;
-    fill: $fill;
 }
 // mixins
