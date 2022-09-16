@@ -74,15 +74,15 @@
   border-radius: 2px;
 }
 
-.link {
+.header__link {
   text-decoration: none;
   color: rgb(0, 0, 0);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:visited {
+.header__link:visited {
   color: rgb(33, 33, 33);
 }
-.link:hover, .link:focus {
+.header__link:hover, .header__link:focus {
   color: rgb(33, 150, 243);
   fill: rgb(33, 150, 243);
 }
@@ -112,6 +112,147 @@
   height: 16px;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 252px;
+  gap: 70px;
+  background-color: rgb(47, 48, 58);
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+}
+.logo--three {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "raleway", sans-serif;
+  line-height: 100%;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14px;
+  line-height: 146%;
+  color: rgb(255, 255, 255);
+}
+.address__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+.address__link {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link:visited {
+  color: rgb(33, 33, 33);
+}
+.address__link:hover, .address__link:focus {
+  color: rgb(33, 150, 243);
+  fill: rgb(33, 150, 243);
+}
+
+.join-us {
+  margin-top: 72px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.social-list--icons {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(117, 117, 117);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: rgb(255, 255, 255);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list--icons:hover, .social-list--icons:focus {
+  background-color: rgb(33, 150, 243);
+}
+
+.newsletter p {
+  margin: 72px 0 20px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.newsletter__form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  gap: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  background: rgb(33, 150, 243);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.newsletter__form input {
+  background-color: rgb(47, 48, 58);
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  padding-left: 16px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.newsletter__submit-icon {
+  width: 24px;
+  height: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -123,8 +264,8 @@ body {
   width: 1600px;
   margin: 0 auto;
   letter-spacing: 0.03em;
-  font-weight: getfont-weight "normal";
-  font-size: getfont-size "bolder";
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.03em;
   color: rgb(33, 33, 33);
   font-family: "Roboto", sans-serif;
@@ -132,7 +273,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1600px;
 }
 
 .section {
@@ -142,8 +283,8 @@ body {
 h1 {
   text-align: center;
   align-items: center;
-  font-weight: getfont-weight "bolder";
-  font-size: getfont-size "h1";
+  font-weight: 900;
+  font-size: 44px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -151,16 +292,16 @@ h1 {
 }
 
 h2 {
-  font-weight: getfont-weight "bold";
-  font-size: getfont-size "h2";
+  font-weight: 900;
+  font-size: 36px;
   line-height: 100%;
   text-align: center;
   margin-bottom: 50px;
 }
 
 h4 {
-  font-weight: getfont-weight "bold";
-  font-size: getfont-size "h4";
+  font-weight: 700;
+  font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;

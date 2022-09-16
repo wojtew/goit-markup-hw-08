@@ -17,7 +17,7 @@ $membercontainershadow3: rgba(0, 0, 0, 0.2);
 $socialiconColor:  rgb(175, 177, 184);
 $footerColor:  rgb(47, 48, 58);
 $footercontactsColor: rgba(255, 255, 255, 0.6);
-$footericonsbackgroundColor: rgba(255, 255, 255, 0.102);
+$footericonsbackgroundColor: rgba(255, 255, 255, 0.1);
 $newsletterinputborderColor: rgba(255, 255, 255, 0.3);
 $newslettershadowColor: rgba(47, 48, 58, 1);
 $carditemColor: rgb(238, 238, 238);
@@ -62,5 +62,8 @@ $logo-font: "raleway", sans-serif;
 @mixin hover($background-color, $color) {
     background-color: $background-color ;
     color: $color ;
+}
+@mixin color ($color) {
+    color: $color;
 }
 // mixins
