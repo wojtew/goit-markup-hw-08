@@ -85,7 +85,13 @@
 		background-color: $activeColor;
 		border-radius: 2px;
 	}
+	&__portable-menu {
+		display: none;
+		width: 24px;
+		height: 16px;
+	}
 }
+
 .contacts {
 	@include flexcenter(row);
 	margin-left: auto;

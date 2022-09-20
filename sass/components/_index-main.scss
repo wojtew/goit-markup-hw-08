@@ -2,6 +2,9 @@
 	display: flex;
 	gap: 30px;
 	&--icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 270px;
 		height: 120px;
 		background-color: $backgroundiconColor;
@@ -22,26 +25,25 @@
 }
 .jobs {
 	@include flexdirection(row);
-	padding-bottom: 94px;
 	gap: 30px;
 	&__description {
 		@include flexcenter(row);
 		position: absolute;
 		bottom: 0;
-		left: 0;
 		width: 370px;
 		height: 70px;
 		background-color: $descriptionColor;
 		color: $secondaryfontColor;
 	}
-	&__position {
+	&__img {
 		position: relative;
 	}
 }
 .team {
+	padding: 60px 0;
 	background-color: $backgroundiconColor;
 	width: 100%;
-	height: 648px;
+	height: 100%;
 	&__position {
 		display: flex;
 		gap: 30px;
@@ -91,7 +93,7 @@
 }
 .partners {
 	@include flexdirection(row);
-	padding-bottom: 94px;
+	// padding-bottom: 94px;
 	gap: 30px;
 	&__box {
 		width: 170px;

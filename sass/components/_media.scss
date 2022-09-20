@@ -1,0 +1,57 @@
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	body {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.header {
+		margin: 0 auto;
+		padding: 16px 23px 16px 15px;
+	}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.background {
+		width: 100%;
+		max-height: 100%;
+	}
+	.contacts {
+		display: none;
+	}
+	.navigation {
+		display: none;
+		&__portable-menu {
+			display: block;
+			align-self: center;
+		}
+	}
+	.strengths {
+		@include flexdirection(column);
+		max-width: 768px;
+		margin: 0;
+		padding: 0 15px;
+		&--icon {
+			width: 100%;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__description {
+			text-align: center;
+		}
+	}
+	.jobs {
+		@include flexdirection(column);
+		&__img {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.team__position {
+		@include flexdirection(column);
+    }
+
+	.partners {
+		@include flexdirection(column);
+	}
+}
