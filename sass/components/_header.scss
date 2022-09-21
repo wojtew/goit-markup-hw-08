@@ -112,3 +112,90 @@
 		height: 16px;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	body {
+		width: 100%;
+	}
+	h1 {
+		font-size: map-get($map: $font-size, $key: logo);
+		line-height: 162%;
+	}
+	.header {
+		padding: 16px 23px 16px 15px;
+	}
+	.container {
+		width: 100%;
+	}
+	.background {
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+	}
+	.contacts {
+		display: none;
+	}
+	.navigation {
+		display: none;
+		&__portable-menu {
+			display: block;
+			align-self: center;
+		}
+	}
+	.strengths {
+		@include flexdirection(column);
+		max-width: 768px;
+		margin: 0 15px;
+		&--icon {
+			width: 100%;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__description {
+			text-align: center;
+		}
+	}
+	.jobs {
+		@include flexdirection(column);
+		&__img {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.team__position {
+		@include flexdirection(column);
+	}
+	.team__member {
+		margin: 0 auto;
+	}
+	.partners {
+		display: flex;
+		flex-flow: row wrap;
+		& li {
+			margin: 0 auto;
+		}
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 100%;
+		padding: 60px 0;
+	}
+	.logo {
+		display: inline;
+	}
+	.newsletter p {
+		display: flex;
+		justify-content: center;
+	}
+
+	.newsletter__form {
+		display: flex;
+		flex-direction: column;
+		& button {
+			margin: auto;
+		}
+	}
+}

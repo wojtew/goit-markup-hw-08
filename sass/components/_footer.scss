@@ -7,13 +7,13 @@
 	background-color: $footerColor;
 	&__contacts {
 		@include flexdirection(column);
-		padding-top: 60px;
-		gap: 20px;
+		align-self: center;
 	}
 }
 .logo {
 	display: flex;
 	text-decoration: none;
+	padding-bottom: 20px;
 	&--three {
 		color: $secondaryfontColor;
 		font-weight: map-get($map: $font-weight, $key: bold);
@@ -36,27 +36,32 @@
 	}
 	&__link {
 		text-decoration: none;
-		color:$contactsColor;
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		color: $contactsColor;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+			fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		&:visited {
-		color: $fontmainColor;
-	}
+			color: $fontmainColor;
+		}
 		&:hover,
 		&:focus {
-		color: $activeColor;
-		fill: $activeColor;
+			color: $activeColor;
+			fill: $activeColor;
+		}
 	}
 }
-	}
 .join-us {
-	margin-top: 72px;
-	margin-bottom: 20px;
-	font-weight: map-get($map: $font-weight, $key: bold);
-	font-size: map-get($map: $font-size, $key: normal);
-	line-height: 16px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: $secondaryfontColor;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	&--text {
+		padding-bottom: 20px;
+		font-weight: map-get($map: $font-weight, $key: bold);
+		font-size: map-get($map: $font-size, $key: normal);
+		line-height: 16px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $secondaryfontColor;
+	}
 }
 .social-list {
 	@include flexdirection(row);
@@ -75,8 +80,13 @@
 		}
 	}
 }
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
 .newsletter p {
-	margin: 72px 0 20px 0;
+	padding-bottom: 20px;
 	font-weight: map-get($map: $font-weight, $key: bold);
 	font-size: map-get($map: $font-size, $key: normal);
 	line-height: 16px;
@@ -91,7 +101,6 @@
 		@include flexcenter(row);
 		width: 200px;
 		height: 50px;
-		text-align: center;
 		gap: 24px;
 		font-weight: map-get($map: $font-weight, $key: bold);
 		font-size: map-get($map: $font-size, $key: bolder);

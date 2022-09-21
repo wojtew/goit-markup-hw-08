@@ -93,7 +93,6 @@
 }
 .partners {
 	@include flexdirection(row);
-	// padding-bottom: 94px;
 	gap: 30px;
 	&__box {
 		width: 170px;

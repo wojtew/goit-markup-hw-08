@@ -33,7 +33,7 @@ h1 {
 	color: $secondaryfontColor;
 }
 h2 {
-	font-weight: map-get($map: $font-weight, $key: bolder);
+	font-weight: map-get($map: $font-weight, $key: bold);
 	font-size: map-get($map: $font-size, $key: h2);
 	line-height: 100%;
 	text-align: center;

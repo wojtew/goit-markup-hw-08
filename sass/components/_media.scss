@@ -1,19 +1,21 @@
 @media only screen and (max-width: 480px) {
 	body {
-		margin: 0 auto;
 		width: 100%;
 	}
+	h1 {
+		font-size: map-get($map: $font-size, $key: logo);
+		line-height: 162%;
+	}
 	.header {
-		margin: 0 auto;
 		padding: 16px 23px 16px 15px;
 	}
 	.container {
 		width: 100%;
-		margin: 0 auto;
 	}
 	.background {
-		width: 100%;
-		max-height: 100%;
+		height: 400px;
+		background-size: cover;
+		background-position: center;
 	}
 	.contacts {
 		display: none;
@@ -28,8 +30,7 @@
 	.strengths {
 		@include flexdirection(column);
 		max-width: 768px;
-		margin: 0;
-		padding: 0 15px;
+		margin: 0 15px;
 		&--icon {
 			width: 100%;
 		}
@@ -49,9 +50,41 @@
 	}
 	.team__position {
 		@include flexdirection(column);
-    }
-
+	}
+	.team__member {
+		margin: 0 auto;
+	}
 	.partners {
-		@include flexdirection(column);
+		display: flex;
+		flex-flow: row wrap;
+		& li {
+			margin: 0 auto;
+		}
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 100%;
+		padding: 60px 0;
+	}
+	.logo {
+		display: inline;
+	}
+	.newsletter p {
+		display: flex;
+		justify-content: center;
+	}
+
+	.newsletter__form {
+		display: flex;
+		flex-direction: column;
+		& button {
+			margin: auto;
+		}
+	}
+	.modal {
+		max-width: 450px;
+		max-height: 609px;
 	}
 }
