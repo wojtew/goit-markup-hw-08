@@ -29,6 +29,7 @@
 }
 .modal {
 	@include positioncenter;
+	padding: 0 15px;
 	width: 528px;
 	min-height: 581px;
 	background-color: $secondaryfontColor;

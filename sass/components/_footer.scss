@@ -1,8 +1,9 @@
 .footer {
-	@include flexdirection(row);
+	@include flexdirection(column);
 	justify-content: center;
+	text-align: center;
 	width: 100%;
-	height: 252px;
+	height: 100%;
 	gap: 70px;
 	background-color: $footerColor;
 	&__contacts {
@@ -11,7 +12,6 @@
 	}
 }
 .logo {
-	display: flex;
 	text-decoration: none;
 	padding-bottom: 20px;
 	&--three {
@@ -95,9 +95,10 @@
 	color: $secondaryfontColor;
 }
 .newsletter__form {
-	@include flexdirection(row);
+	@include flexdirection(column);
 	gap: 20px;
 	& button {
+		margin: auto;
 		@include flexcenter(row);
 		width: 200px;
 		height: 50px;
@@ -116,7 +117,8 @@
 	}
 	& input {
 		@include hover($newslettershadowColor, $footercontactsColor);
-		width: 358px;
+		min-width: 320px;
+		margin: 0 auto;
 		padding-left: 16px;
 		height: 50px;
 		font-weight: map-get($map: $font-weight, $key: normal);

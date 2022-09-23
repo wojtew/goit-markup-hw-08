@@ -1,9 +1,12 @@
 .background {
 	@include flexcenter(column);
-	width: 100%;
-	height: 600px;
+	max-width: 1600px;
+	height: 400px;
 	gap: 30px;
 	background: $shadowbackgroundColor url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	background-blend-mode: darken;
 	box-shadow: 0 4px 4px $shadowbackgroundColor;
 	border-top: 1px solid $headerborderColor;
@@ -24,8 +27,9 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 auto;
-	padding: 24px 0 25px 0;
+	padding: 16px 16px;
 	gap: 93px;
 	&__link {
 		text-decoration: none;
@@ -36,7 +40,6 @@
 		&:visited {
 			color: $fontmainColor;
 		}
-
 		&:hover,
 		&:focus {
 			color: $activeColor;
@@ -59,143 +62,149 @@
 	}
 }
 .navigation {
-	display: flex;
-	align-items: center;
-
-	&__list {
-		display: flex;
-		gap: 46px;
-	}
-	&__list-item {
-		font-weight: map-get($map: $font-weight, $key: medium);
-		font-size: map-get($map: $font-size, $key: normal);
-		line-height: 100%;
-		letter-spacing: 0.02em;
-	}
-	&--active-site {
-		color: $activeColor;
-	}
-	&--active-site::after {
-		content: '';
-		position: relative;
-		display: block;
-		top: 29px;
-		width: 58px;
-		height: 4px;
-		background-color: $activeColor;
-		border-radius: 2px;
-	}
+	display: none;
 	&__portable-menu {
-		display: none;
-		width: 24px;
-		height: 16px;
+		width: 20px;
+		height: 20px;
 	}
 }
 
+// 		}
+// display: flex;
+// align-items: center;
+
+// &__list {
+// 	display: flex;
+// 	gap: 46px;
+// }
+// &__list-item {
+// 	font-weight: map-get($map: $font-weight, $key: medium);
+// 	font-size: map-get($map: $font-size, $key: normal);
+// 	line-height: 100%;
+// 	letter-spacing: 0.02em;
+// }
+// &--active-site {
+// 	color: $activeColor;
+// }
+// &--active-site::after {
+// 	content: '';
+// 	position: relative;
+// 	display: block;
+// 	top: 29px;
+// 	width: 58px;
+// 	height: 4px;
+// 	background-color: $activeColor;
+// 	border-radius: 2px;
+// }
+// &__portable-menu {
+// 	display: none;
+// 	width: 24px;
+// 	height: 16px;
+// 	&:hover,
+// 	&:focus {
+// 		fill: $activeColor;
+// 	}
+// }
 .contacts {
-	@include flexcenter(row);
-	margin-left: auto;
-	gap: 50px;
-	&__link {
-		@include flexdirection(row);
-		align-items: center;
-		gap: 10px;
-		font-weight: map-get($map: $font-weight, $key: medium);
-		font-size: map-get($map: $font-size, $key: normal);
-		line-height: 100%;
-		letter-spacing: 0.02em;
-		color: $contactsColor;
-		fill: $contactsColor;
-	}
-	&__link--icon {
-		width: 16px;
-		height: 16px;
-	}
+	display: none;
 }
+// 	@include flexcenter(row);
+// 	margin-left: auto;
+// 	gap: 50px;
+// 	&__link {
+// 		@include flexdirection(row);
+// 		align-items: center;
+// 		gap: 10px;
+// 		font-weight: map-get($map: $font-weight, $key: medium);
+// 		font-size: map-get($map: $font-size, $key: normal);
+// 		line-height: 100%;
+// 		letter-spacing: 0.02em;
+// 		color: $contactsColor;
+// 		fill: $contactsColor;
+// 	}
+// 	&__link--icon {
+// 		width: 16px;
+// 		height: 16px;
+// 	}
+// }
 
-@media only screen and (max-width: 480px) {
-	body {
-		width: 100%;
-	}
-	h1 {
-		font-size: map-get($map: $font-size, $key: logo);
-		line-height: 162%;
-	}
-	.header {
-		padding: 16px 23px 16px 15px;
-	}
-	.container {
-		width: 100%;
-	}
-	.background {
-		height: 400px;
-		background-size: cover;
-		background-position: center;
-	}
-	.contacts {
-		display: none;
-	}
-	.navigation {
-		display: none;
-		&__portable-menu {
-			display: block;
-			align-self: center;
-		}
-	}
-	.strengths {
-		@include flexdirection(column);
-		max-width: 768px;
-		margin: 0 15px;
-		&--icon {
-			width: 100%;
-		}
-		&__title {
-			text-align: center;
-		}
-		&__description {
-			text-align: center;
-		}
-	}
-	.jobs {
-		@include flexdirection(column);
-		&__img {
-			display: flex;
-			justify-content: center;
-		}
-	}
-	.team__position {
-		@include flexdirection(column);
-	}
-	.team__member {
-		margin: 0 auto;
-	}
-	.partners {
-		display: flex;
-		flex-flow: row wrap;
-		& li {
-			margin: 0 auto;
-		}
-	}
-	.footer {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		height: 100%;
-		padding: 60px 0;
-	}
-	.logo {
-		display: inline;
-	}
-	.newsletter p {
-		display: flex;
-		justify-content: center;
-	}
+// @media only screen and (max-width: 480px) {
+// 	h1 {
+// 		font-size: map-get($map: $font-size, $key: logo);
+// 		line-height: 162%;
+// 	}
+// 	.header {
+// 		padding: 16px 23px 16px 15px;
+// 	}
+// 	.background {
+// 		height: 400px;
+// 		background-size: cover;
+// 		background-position: center;
+// 	}
+// 	.contacts {
+// 		display: none;
+// 	}
+// 	.navigation {
+// 		display: none;
+// 		&__portable-menu {
+// 			display: block;
+// 			align-self: center;
+// 		}
+// 	}
+// 	.strengths {
+// 		@include flexdirection(column);
+// 		max-width: 768px;
+// 		margin: 0 15px;
+// 		&--icon {
+// 			width: 100%;
+// 		}
+// 		&__title {
+// 			text-align: center;
+// 		}
+// 		&__description {
+// 			text-align: center;
+// 		}
+// 	}
+// 	.jobs {
+// 		@include flexdirection(column);
+// 		&__img {
+// 			display: flex;
+// 			justify-content: center;
+// 		}
+// 	}
+// 	.team__position {
+// 		@include flexdirection(column);
+// 	}
+// 	.team__member {
+// 		margin: 0 auto;
+// 	}
+// 	.partners {
+// 		display: flex;
+// 		flex-flow: row wrap;
+// 		& li {
+// 			margin: 0 auto;
+// 		}
+// 	}
+// 	.footer {
+// 		display: flex;
+// 		flex-direction: column;
+// 		text-align: center;
+// 		height: 100%;
+// 		padding: 60px 0;
+// 	}
+// 	.logo {
+// 		display: inline;
+// 	}
+// 	.newsletter p {
+// 		display: flex;
+// 		justify-content: center;
+// 	}
 
-	.newsletter__form {
-		display: flex;
-		flex-direction: column;
-		& button {
-			margin: auto;
-		}
-	}
-}
+// 	.newsletter__form {
+// 		display: flex;
+// 		flex-direction: column;
+// 		& button {
+// 			margin: auto;
+// 		}
+// 	}
+// }

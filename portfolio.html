@@ -11,13 +11,14 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/modern-normalise.css" />
-		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Studio</title>
 	</head>
 	<body>
 		<header class="header container">
 			<a class="link" href="./index.html">
-				<span class="header--logo-one">Web</span><span class="header--logo-two">Studio </span>
+				<span class="header--logo-one">Web</span
+				><span class="header--logo-two">Studio </span>
 			</a>
 			<nav class="navigation">
 				<ul class="navigation__list">
@@ -27,14 +28,21 @@
 						>
 					</li>
 					<li class="navigation__list-item">
-						<a class="link navigation--active" href="./portfolio.html"><span class="navigation--active-site">Portfolio</span></a>
+						<a class="link navigation--active" href="./portfolio.html"
+							><span class="navigation--active-site">Portfolio</span></a
+						>
 					</li>
-					<li class="navigation__list-item"><a class="link" href="#">Kontakt</a></li>
+					<li class="navigation__list-item">
+						<a class="link" href="#">Kontakt</a>
+					</li>
 				</ul>
 			</nav>
 			<ul class="contacts">
 				<li>
-					<a class="contacts__link header__link" href="mailto:info@devstudio.com">
+					<a
+						class="contacts__link header__link"
+						href="mailto:info@devstudio.com"
+					>
 						<svg class="contacts__link--icon">
 							<use
 								href="./images/icons.svg#icon-envelope"
@@ -58,6 +66,9 @@
 					</a>
 				</li>
 			</ul>
+			<svg class="navigation__portable-menu">
+				<use href="./images/icons.svg#icon-menu" width="24" height="16"></use>
+			</svg>
 		</header>
 		<main>
 			<div class="container">
@@ -274,79 +285,81 @@
 				</a>
 				<address class="address">
 					m. Warszawa, Aleje Jerozolimskie 21
-					<a class="adress__contacts address__link" href="mailto:info@devstudio.com"
+					<a
+						class="adress__contacts address__link"
+						href="mailto:info@devstudio.com"
 						>info@devstudio.com</a
 					>
-					<a class="adress__contacts address__link" href="tel:+48111111111">+48 111 111 111</a>
+					<a class="adress__contacts address__link" href="tel:+48111111111"
+						>+48 111 111 111</a
+					>
 				</address>
 			</div>
-			<div>
-					<p class="join-us">Dołącz do nas</p>
-					<ul class="social-list">
-						<li>
-							<svg class="social-list--icons">
-								<use
-									href="./images/icons.svg#icon-instagram-2"
-									width="22"
-									height="22"
-									x="11"
-									y="11"
-								></use>
-							</svg>
-						</li>
-						<li>
-							<svg class="social-list--icons">
-								<use
-									href="./images/icons.svg#icon-twitter-1"
-									width="22"
-									height="22"
-									x="11"
-									y="11"
-								></use>
-							</svg>
-						</li>
-						<li>
-							<svg class="social-list--icons">
-								<use
-									href="./images/icons.svg#icon-facebook-1"
-									width="22"
-									height="22"
-									x="11"
-									y="11"
-								></use>
-							</svg>
-						</li>
-						<li>
-							<svg class="social-list--icons">
-								<use
-									href="./images/icons.svg#icon-linkedin-1"
-									width="22"
-									height="22"
-									x="11"
-									y="11"
-								></use>
-							</svg>
-						</li>
-					</ul>
+			<div class="join-us">
+				<p class="join-us--text">Dołącz do nas</p>
+				<ul class="social-list">
+					<li>
+						<svg class="social-list--icons">
+							<use
+								href="./images/icons.svg#icon-instagram-2"
+								width="22"
+								height="22"
+								x="11"
+								y="11"
+							></use>
+						</svg>
+					</li>
+					<li>
+						<svg class="social-list--icons">
+							<use
+								href="./images/icons.svg#icon-twitter-1"
+								width="22"
+								height="22"
+								x="11"
+								y="11"
+							></use>
+						</svg>
+					</li>
+					<li>
+						<svg class="social-list--icons">
+							<use
+								href="./images/icons.svg#icon-facebook-1"
+								width="22"
+								height="22"
+								x="11"
+								y="11"
+							></use>
+						</svg>
+					</li>
+					<li>
+						<svg class="social-list--icons">
+							<use
+								href="./images/icons.svg#icon-linkedin-1"
+								width="22"
+								height="22"
+								x="11"
+								y="11"
+							></use>
+						</svg>
+					</li>
+				</ul>
 			</div>
-
 			<div class="newsletter">
-					<p>ZAPISZ SIĘ DO NEWSLETTERA</p>
-					<form class="newsletter__form">
-						<input type="text" placeholder="E-mail" name="email" required>
-						<button type="submit">
-							<span>Zapisz się</span>
-							<svg class="newsletter__submit-icon">
-								<use
+				<p>ZAPISZ SIĘ DO NEWSLETTERA</p>
+				<form class="newsletter__form">
+					<input type="text" placeholder="E-mail" name="email" required />
+					<button type="submit">
+						<span>Zapisz się</span>
+						<svg class="newsletter__submit-icon">
+							<use
 								href="./images/icons.svg#icon-send"
 								height="24"
 								width="24"
-								></use>
-							</svg>
-						</button>
-					</form>
+							></use>
+						</svg>
+					</button>
+				</form>
 			</div>
-
 		</footer>
 	</body>
 </html>

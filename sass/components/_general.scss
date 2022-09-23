@@ -6,8 +6,6 @@
 	text-decoration: none;
 }
 body {
-	width: 1600px;
-	margin: 0 auto;
 	letter-spacing: 0.03em;
 	font-weight: map-get($map: $font-weight, $key: normal);
 	font-size: map-get($map: $font-size, $key: bolder);
@@ -17,7 +15,7 @@ body {
 }
 .container {
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
 }
 .section {
 	margin: 94px 0;
