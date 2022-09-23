@@ -1,6 +1,7 @@
 .footer {
 	@include flexdirection(column);
 	justify-content: center;
+	padding: 60px 15px;
 	text-align: center;
 	width: 100%;
 	height: 100%;
@@ -97,6 +98,7 @@
 .newsletter__form {
 	@include flexdirection(column);
 	gap: 20px;
+	width: 450px;
 	& button {
 		margin: auto;
 		@include flexcenter(row);
@@ -117,7 +119,9 @@
 	}
 	& input {
 		@include hover($newslettershadowColor, $footercontactsColor);
-		min-width: 320px;
+		min-width: 290px;
+		max-width: 450px;
+		width: calc(100vw - 30px);
 		margin: 0 auto;
 		padding-left: 16px;
 		height: 50px;

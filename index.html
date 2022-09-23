@@ -61,12 +61,10 @@
 				<button class="menu-toggle js-open-menu"
          				 aria-expanded="false"
          				 aria-controls="mobile-menu">
-					<svg class="navigation__portable-menu">
+					<svg class="header-btn active-btn">
 						<use href="./images/icons.svg#icon-menu"
 							width="24"
 							height="16"
-							fill="currentColor"
-							viewBox="0 0 20 20">
 						</use>
 					</svg>
 				</button>
@@ -632,18 +630,14 @@
 	
 		<div class="menu-container js-menu-container" id="mobile-menu">
       		<button class="menu-toggle js-close-menu">
-       			<svg
-        		 	fill="currentColor"
-					viewBox="0 0 20 20"
-         			xmlns="http://www.w3.org/2000/svg"
-         			width="24"
-         			height="24">
-          			<path
-            			fill-rule="evenodd"
-           				d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-           				 clip-rule="evenodd"
-        		  	</path>
-       			 </svg>
+       			<svg class="active-btn">
+					<use href="./images/icons.svg#icon-close"
+					width="19"
+					height="19">
+
+					</use>
+				</svgc>
+       			 
       		</button>
 				<div>
      				<ul class="mobile-contacts">
@@ -661,10 +655,10 @@
 						</li>
 					</ul>
 					<ul class="mobile">
-						<li class="mobile-contacts__social">instagram</li>
-						<li class="mobile-contacts__social">twitter</li>
-						<li class="mobile-contacts__social">facebook</li>
-						<li class="mobile-contacts__social">Linkedin</li>
+						<li><a class="mobile-contacts__social" href="">Instagram</a></li>
+						<li><a class="mobile-contacts__social" href="">Twitter</a></li>
+						<li><a class="mobile-contacts__social" href="">Facebook</a></li>
+						<li><a class="mobile-contacts__social" href="">LinkedIn</a></li>
 					</ul>
 				</div>
     	</div>

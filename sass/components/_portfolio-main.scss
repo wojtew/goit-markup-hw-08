@@ -1,6 +1,7 @@
 .filter {
 	@include flexdirection(row);
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 8px;
 	&__button {
 		width: 121px;
@@ -15,7 +16,7 @@
 		border: 0;
 		cursor: pointer;
 		transition: box-shadow, color,
-			background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		&:focus,
 		&:hover,
 		&:active {
@@ -33,6 +34,7 @@
 	gap: 30px;
 	column-gap: 30px;
 	&__item {
+		margin: 0 auto;
 		display: block;
 		position: relative;
 		overflow: hidden;

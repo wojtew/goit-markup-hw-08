@@ -1,13 +1,13 @@
 .strengths {
 	@include flexdirection(column);
-	flex-wrap: wrap;
 	gap: 30px;
 	margin: 0 15px;
+	width: 100vw;
 	&--icon {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
+		max-width: 354px;
 		height: 120px;
 		background-color: $backgroundiconColor;
 		margin-bottom: 30px;
