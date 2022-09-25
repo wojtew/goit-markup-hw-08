@@ -66,13 +66,13 @@
 					</a>
 				</li>
 			</ul>
-			<button class="menu-toggle js-open-menu"
+				<button class="menu-toggle js-open-menu"
          				 aria-expanded="false"
          				 aria-controls="mobile-menu">
-					<svg class="header-btn active-btn">
+					<svg class="mobile-menu header-btn active-btn">
 						<use href="./images/icons.svg#icon-menu"
-							width="24"
-							height="16"
+							width="20"
+							height="20"
 						</use>
 					</svg>
 				</button>
@@ -202,6 +202,7 @@
 						</li>
 						<li class="card__item">
 							<img
+							
 								src="./images/portfolio-img-6.jpg"
 								alt="Ekran monitora"
 								width="370"
@@ -368,5 +369,40 @@
 				</form>
 			</div>
 		</footer>
+				<div class="menu-container js-menu-container" id="mobile-menu">
+      		<button class="menu-toggle js-close-menu">
+       			<svg class="active-btn">
+					<use href="./images/icons.svg#icon-close"
+					width="19"
+					height="19">
+
+					</use>
+				</svgc>
+       			 
+      		</button>
+				<div>
+     				<ul class="mobile-menu list-pages">
+						<li><a href="#" class="list-pages__link">Agencja</a></li>
+						<li><a href="./portfolio.html" class="list-pages__link">Portfolio</a></li>
+       					<li><a href="#" class="list-pages__link">Kontakt</a></li>
+     				</ul>
+					<ul class="mobile-menu list-contacts">
+						<li>
+							<a class="list-contacts__phone" href="tel:+48111111111" >+48 111 	111 111
+							</a>
+						</li>
+						<li><a class="list-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="mobile-menu list-social">
+						<li class="list-social__item"><a class="list-social__item--link" href="">Instagram</a></li>
+						<li class="list-social__item"><a class="list-social__item--link" href="">Twitter</a></li>
+						<li class="list-social__item"><a class="list-social__item--link" href="">Facebook</a></li>
+						<li class="list-social__item"><a class="list-social__item--link" href="">LinkedIn</a></li>
+					</ul>
+				</div>
+    	</div>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

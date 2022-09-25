@@ -1,10 +1,11 @@
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-	.header-btn {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.mobile-menu {
 		display: none;
 	}
 	.navigation {
 		display: flex;
 		align-items: center;
+		margin-left: auto;
 		&__list {
 			display: flex;
 			gap: 46px;
@@ -32,6 +33,7 @@
 	.contacts {
 		@include flexdirection(column);
 		gap: 10px;
+		margin-left: auto;
 		&__link {
 			@include flexdirection(row);
 			align-items: center;
@@ -48,5 +50,85 @@
 			height: 16px;
 		}
 	}
-	
+	.strengths {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.strengths-list {
+		max-width: 354px;
+	}
+	.footer {
+		flex-flow: row wrap;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.mobile-menu {
+		display: none;
+	}
+	.navigation {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		&__list {
+			display: flex;
+			gap: 46px;
+		}
+		&__list-item {
+			font-weight: map-get($map: $font-weight, $key: medium);
+			font-size: map-get($map: $font-size, $key: normal);
+			line-height: 100%;
+			letter-spacing: 0.02em;
+		}
+		&--active-site {
+			color: $activeColor;
+		}
+		&--active-site::after {
+			content: '';
+			position: relative;
+			display: block;
+			top: 21px;
+			width: 58px;
+			height: 4px;
+			background-color: $activeColor;
+			border-radius: 2px;
+		}
+	}
+	.contacts {
+		@include flexdirection(row);
+		gap: 30px;
+		margin-left: auto;
+		&__link {
+			@include flexdirection(row);
+			align-items: center;
+			gap: 10px;
+			font-weight: map-get($map: $font-weight, $key: medium);
+			font-size: map-get($map: $font-size, $key: normal);
+			line-height: 100%;
+			letter-spacing: 0.02em;
+			color: $contactsColor;
+			fill: $contactsColor;
+		}
+		&__link--icon {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	.strengths {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.strengths-list {
+		max-width: 270px;
+	}
+	.footer {
+		flex-flow: row nowrap;
+	}
+	.newsletter__form {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.newsletter p {
+		display: flex;
+		
+	}
 }

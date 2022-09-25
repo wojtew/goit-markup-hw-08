@@ -26,11 +26,10 @@
 }
 .header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
 	padding: 16px 16px;
-	gap: 93px;
+	// gap: 93px;
 	&__link {
 		text-decoration: none;
 		color: $logoblackColor;

@@ -1,42 +1,41 @@
 .strengths {
-	display: flex;
-	flex-direction: column;
+	@include flexdirection(column);
 	gap: 30px;
 	justify-content: center;
 	align-items: center;
 	padding: 0 15px;
-	&--icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	&-list {
+		// display: flex;
+		flex-direction: column;
 		width: 100%;
-		max-width: 354px;
-		height: 120px;
-		background-color: $backgroundiconColor;
-		margin-bottom: 30px;
-	}
-	&__title {
-		font-weight: map-get($map: $font-weight, $key: bold);
-		font-size: map-get($map: $font-size, $key: normal);
-		line-height: 100%;
-		text-align: center;
-		text-transform: uppercase;
-	}
-	&__description {
-		margin-top: 10px;
-		font-size: map-get($map: $font-size, $key: normal);
-		line-height: 146%;
-		text-align: s;
-		color: $contactsColor;
+		max-width: 450px;
+		align-items: center;
+		&--icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 450px;
+			height: 120px;
+			background-color: $backgroundiconColor;
+			margin-bottom: 30px;
+		}
+		&__title {
+			font-weight: map-get($map: $font-weight, $key: bold);
+			font-size: map-get($map: $font-size, $key: normal);
+			line-height: 100%;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		&__description {
+			margin-top: 10px;
+			font-size: map-get($map: $font-size, $key: normal);
+			line-height: 146%;
+			text-align: s;
+			color: $contactsColor;
+		}
 	}
 }
-.zxc {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-}
-
 .job__section {
 	display: none;
 }
