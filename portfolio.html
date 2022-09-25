@@ -66,16 +66,15 @@
 					</a>
 				</li>
 			</ul>
-				<button class="menu-toggle js-open-menu"
-         				 aria-expanded="false"
-         				 aria-controls="mobile-menu">
-					<svg class="mobile-menu header-btn active-btn">
-						<use href="./images/icons.svg#icon-menu"
-							width="20"
-							height="20">
-						</use>
-					</svg>
-				</button>
+			<button
+				class="menu-toggle js-open-menu"
+				aria-expanded="false"
+				aria-controls="mobile-menu"
+			>
+				<svg class="mobile-menu header-btn active-btn">
+					<use href="./images/icons.svg#icon-menu" width="20" height="20"></use>
+				</svg>
+			</button>
 		</header>
 		<main>
 			<div class="container">
@@ -104,8 +103,7 @@
 							<img
 								src="./images/portfolio-img-1.jpg"
 								alt="Projekt strony internetowej"
-								width="370"
-								height="294"
+								srcset="portfolio-img-1@2x,jpg 2x"
 							/>
 							<div class="card__description">
 								<h3>Technocrack</h3>
@@ -121,12 +119,8 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img
-								src="./images/portfolio-img-2.jpg"
-								alt="dwóch koszykarzy"
-								width="370"
-								height="294"
-							/>
+							<img src="./images/portfolio-img-2.jpg" alt="dwóch koszykarzy"
+							srcset="portfolio-img-2@2x,jpg 2x" />
 							<div class="card__description">
 								<h3>Grafika New Orlean vs Golden Star</h3>
 								<p>Dizajn</p>
@@ -144,8 +138,7 @@
 							<img
 								src="./images/portfolio-img-3.jpg"
 								alt="projekt aplikacji restauracji Seafood"
-								width="370"
-								height="294"
+								srcset="portfolio-img-3@2x,jpg 2x"
 							/>
 							<div class="card__description">
 								<h3>Restauracja Seafood</h3>
@@ -161,12 +154,8 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img
-								src="./images/portfolio-img-4.jpg"
-								alt="słuchawki"
-								width="370"
-								height="294"
-							/>
+							<img src="./images/portfolio-img-4.jpg" alt="słuchawki"
+							srcset="portfolio-img-4@2x,jpg 2x" />
 							<div class="card__description">
 								<h3>Projekt Prime</h3>
 								<p>Marketing</p>
@@ -184,8 +173,7 @@
 							<img
 								src="./images/portfolio-img-5.jpg"
 								alt="2 pudełka obok siebie"
-								width="370"
-								height="294"
+								srcset="portfolio-img-51@2x,jpg 2x"
 							/>
 							<div class="card__description">
 								<h3>Projekt Boxes</h3>
@@ -201,13 +189,8 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img
-							
-								src="./images/portfolio-img-6.jpg"
-								alt="Ekran monitora"
-								width="370"
-								height="294"
-							/>
+							<img src="./images/portfolio-img-6.jpg" alt="Ekran monitora"
+							srcset="portfolio-img-6@2x,jpg 2x" />
 							<div class="card__description">
 								<h3>Inspiration has no Borders</h3>
 								<p>Strona Internetowa</p>
@@ -225,8 +208,7 @@
 							<img
 								src="./images/portfolio-img-7.jpg"
 								alt="otwarte czasopismo"
-								width="370"
-								height="294"
+								srcset="portfolio-img-7@2x,jpg 2x"
 							/>
 							<div class="card__description">
 								<h3>Magazyn Limited Edition</h3>
@@ -242,12 +224,8 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img
-								src="./images/portfolio-img-8.jpg"
-								alt="Projekt zawieszek"
-								width="370"
-								height="294"
-							/>
+							<img src="./images/portfolio-img-8.jpg" alt="Projekt zawieszek"
+							srcset="portfolio-img-8@2x,jpg 2x" />
 							<div class="card__description">
 								<h3>Projekt LAB</h3>
 								<p>Marketing</p>
@@ -265,8 +243,7 @@
 							<img
 								src="./images/portfolio-img-9.jpg"
 								alt="osoba pisząca na laptopie"
-								width="370"
-								height="294"
+								srcset="portfolio-img-9@2x,jpg 2x"
 							/>
 							<div class="card__description">
 								<h3>Growing Business</h3>
@@ -369,39 +346,52 @@
 				</form>
 			</div>
 		</footer>
-				<div class="menu-container js-menu-container" id="mobile-menu">
-      		<button class="menu-toggle js-close-menu">
-       			<svg class="active-btn">
-					<use href="./images/icons.svg#icon-close"
-					width="19"
-					height="19">
-					</use>
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg class="active-btn">
+					<use
+						href="./images/icons.svg#icon-close"
+						width="19"
+						height="19"
+					></use>
 				</svg>
-       			 
-      		</button>
-				<div>
-     				<ul class="mobile-menu list-pages">
-						<li><a href="#" class="list-pages__link">Agencja</a></li>
-						<li><a href="./portfolio.html" class="list-pages__link">Portfolio</a></li>
-       					<li><a href="#" class="list-pages__link">Kontakt</a></li>
-     				</ul>
-					<ul class="mobile-menu list-contacts">
-						<li>
-							<a class="list-contacts__phone" href="tel:+48111111111" >+48 111 	111 111
-							</a>
-						</li>
-						<li><a class="list-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com
-							</a>
-						</li>
-					</ul>
-					<ul class="mobile-menu list-social">
-						<li class="list-social__item"><a class="list-social__item--link" href="">Instagram</a></li>
-						<li class="list-social__item"><a class="list-social__item--link" href="">Twitter</a></li>
-						<li class="list-social__item"><a class="list-social__item--link" href="">Facebook</a></li>
-						<li class="list-social__item"><a class="list-social__item--link" href="">LinkedIn</a></li>
-					</ul>
-				</div>
-    	</div>
+			</button>
+			<div>
+				<ul class="mobile-menu list-pages">
+					<li><a href="#" class="list-pages__link">Agencja</a></li>
+					<li>
+						<a href="./portfolio.html" class="list-pages__link">Portfolio</a>
+					</li>
+					<li><a href="#" class="list-pages__link">Kontakt</a></li>
+				</ul>
+				<ul class="mobile-menu list-contacts">
+					<li>
+						<a class="list-contacts__phone" href="tel:+48111111111"
+							>+48 111 111 111
+						</a>
+					</li>
+					<li>
+						<a class="list-contacts__mail" href="mailto:info@devstudio.com"
+							>info@devstudio.com
+						</a>
+					</li>
+				</ul>
+				<ul class="mobile-menu list-social">
+					<li class="list-social__item">
+						<a class="list-social__item--link" href="">Instagram</a>
+					</li>
+					<li class="list-social__item">
+						<a class="list-social__item--link" href="">Twitter</a>
+					</li>
+					<li class="list-social__item">
+						<a class="list-social__item--link" href="">Facebook</a>
+					</li>
+					<li class="list-social__item">
+						<a class="list-social__item--link" href="">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
