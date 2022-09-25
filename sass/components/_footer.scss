@@ -98,7 +98,7 @@
 .newsletter__form {
 	@include flexdirection(column);
 	gap: 20px;
-	width: 450px;
+	// width: 450px;
 	& button {
 		margin: auto;
 		@include flexcenter(row);

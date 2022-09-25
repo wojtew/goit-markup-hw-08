@@ -78,13 +78,15 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 0 15px;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
 }
 .strengths--icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   max-width: 354px;
   height: 120px;
   background-color: rgb(245, 245, 250);
@@ -103,6 +105,13 @@
   line-height: 146%;
   text-align: s;
   color: rgb(117, 117, 117);
+}
+
+.zxc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .job__section {
@@ -319,7 +328,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 450px;
 }
 .newsletter__form button {
   margin: auto;
@@ -626,7 +634,7 @@ h1 {
   text-align: center;
   align-items: center;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;

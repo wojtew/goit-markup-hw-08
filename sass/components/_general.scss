@@ -24,7 +24,7 @@ h1 {
 	text-align: center;
 	align-items: center;
 	font-weight: map-get($map: $font-weight, $key: bolder);
-	font-size: map-get($map: $font-size, $key: h1);
+	font-size: map-get($map: $font-size, $key: logo);
 	line-height: 136%;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
