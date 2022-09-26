@@ -1,11 +1,12 @@
-@media (min-device-pixel-ratio: 2),
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi),
-	(min-resolution: 2dppx) {
-	.background {
-		background: $shadowbackgroundColor url(/images/bg@2x.jpg);
-	}
-}
+// @media 
+// (min-device-pixel-ratio: 2),
+// 	(-webkit-min-device-pixel-ratio: 2),
+// 	(min-resolution: 192dpi),
+// 	(min-resolution: 2dppx) {
+// 	.background {
+// 		background: $shadowbackgroundColor url(/images/bg@2x.jpg);
+// 	}
+// }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 	.mobile-menu {
 		display: none;
