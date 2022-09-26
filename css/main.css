@@ -6,10 +6,9 @@
   max-width: 1600px;
   height: 400px;
   gap: 30px;
-  background: rgba(47, 48, 58, 0.4) url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(47, 48, 58, 0.4) url(/images/bg.jpg);
   background-position: center;
+  background-size: cover;
   background-blend-mode: darken;
   box-shadow: 0 4px 4px rgba(47, 48, 58, 0.4);
   border-top: 1px solid rgb(236, 236, 236);
@@ -659,7 +658,7 @@ h4 {
   padding: 39px 0 12px 0;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) {
   .background {
     background: rgba(47, 48, 58, 0.4) url(/images/bg@2x.jpg);
   }
@@ -730,6 +729,12 @@ h4 {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .background {
+    height: 600px;
+  }
+  .background h1 {
+    font-size: 44px;
+  }
   .mobile-menu {
     display: none;
   }
