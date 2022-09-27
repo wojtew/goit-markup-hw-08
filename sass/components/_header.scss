@@ -3,12 +3,12 @@
 	max-width: 1600px;
 	height: 400px;
 	gap: 30px;
-	background-image: linear-gradient(
+	background: linear-gradient(
 			to right,
 			$shadowbackgroundColor,
 			$shadowbackgroundColor
 		),
-		url(/images/bg.jpg);
+		url("/images/bg.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
