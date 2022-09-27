@@ -100,11 +100,20 @@
 				<section class="section">
 					<ul class="card">
 						<li class="card__item">
-							<img
-								src="./images/portfolio-img-1.jpg"
-								alt="Projekt strony internetowej"
-								srcset="portfolio-img-1@2x.jpg 2x"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/portfolio-img-1.jpg 1x,
+										./images/portfolio-img-1@2x  2x
+									"
+									media="(min-width: 600px)"
+								/>
+								<img
+									alt="Projekt strony internetowej"
+									src="./images/portfolio-img-1.jpg"
+								/>
+							</picture>
+
 							<div class="card__description">
 								<h3>Technocrack</h3>
 								<p>Strona Internetowa</p>
@@ -119,8 +128,11 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img src="./images/portfolio-img-2.jpg" alt="dwóch koszykarzy"
-							srcset="portfolio-img-2@2x.jpg 2x" />
+							<img
+								src="./images/portfolio-img-2.jpg"
+								alt="dwóch koszykarzy"
+								srcset="portfolio-img-2@2x.jpg 2x"
+							/>
 							<div class="card__description">
 								<h3>Grafika New Orlean vs Golden Star</h3>
 								<p>Dizajn</p>
@@ -154,8 +166,11 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img src="./images/portfolio-img-4.jpg" alt="słuchawki"
-							srcset="portfolio-img-4@2x.jpg 2x" />
+							<img
+								src="./images/portfolio-img-4.jpg"
+								alt="słuchawki"
+								srcset="portfolio-img-4@2x.jpg 2x"
+							/>
 							<div class="card__description">
 								<h3>Projekt Prime</h3>
 								<p>Marketing</p>
@@ -189,8 +204,11 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img src="./images/portfolio-img-6.jpg" alt="Ekran monitora"
-							srcset="portfolio-img-6@2x.jpg 2x" />
+							<img
+								src="./images/portfolio-img-6.jpg"
+								alt="Ekran monitora"
+								srcset="portfolio-img-6@2x.jpg 2x"
+							/>
 							<div class="card__description">
 								<h3>Inspiration has no Borders</h3>
 								<p>Strona Internetowa</p>
@@ -224,8 +242,11 @@
 							</div>
 						</li>
 						<li class="card__item">
-							<img src="./images/portfolio-img-8.jpg" alt="Projekt zawieszek"
-							srcset="portfolio-img-8@2x.jpg 2x" />
+							<img
+								src="./images/portfolio-img-8.jpg"
+								alt="Projekt zawieszek"
+								srcset="portfolio-img-8@2x.jpg 2x"
+							/>
 							<div class="card__description">
 								<h3>Projekt LAB</h3>
 								<p>Marketing</p>
