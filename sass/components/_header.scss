@@ -4,17 +4,12 @@
 	max-width: 1600px;
 	height: 400px;
 	gap: 30px;
-	background: linear-gradient(
-			to right,
-			$shadowbackgroundColor,
-			$shadowbackgroundColor
-		),
-		url(/images/bg.jpg);
+	background-image: url(/images/bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	box-shadow: 0 4px 4px $shadowbackgroundColor;
-	border-top: 1px solid $headerborderColor;
+	// box-shadow: 0 4px 4px $shadowbackgroundColor;
+	// border-top: 1px solid $headerborderColor;
 
 	&__order-button {
 		width: 200px;

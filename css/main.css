@@ -7,12 +7,10 @@
   max-width: 1600px;
   height: 400px;
   gap: 30px;
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg.jpg);
+  background-image: url(/images/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 4px 4px rgba(47, 48, 58, 0.4);
-  border-top: 1px solid rgb(236, 236, 236);
 }
 .background__order-button {
   width: 200px;
@@ -662,7 +660,7 @@ h4 {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .background {
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg@2x.jpg);
+    background-image: url(../../images/bg@2x.jpg);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
