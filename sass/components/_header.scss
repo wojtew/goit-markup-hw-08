@@ -4,7 +4,8 @@
 	max-width: 1600px;
 	height: 400px;
 	gap: 30px;
-	background: url(../images/bg.jpg);
+	background: $shadowbackgroundColor url(../images/bg.jpg);
+	background-blend-mode: darken;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -72,7 +73,7 @@
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
 	.background {
-		background-image: url(../images/bg@2x.jpg);
+		background: $shadowbackgroundColor url(../images/bg@2x.jpg);
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
