@@ -37,7 +37,6 @@
 	gap: 30px;
 	column-gap: 30px;
 	&__item {
-
 		display: block;
 		position: relative;
 		overflow: hidden;
@@ -53,6 +52,7 @@
 		}
 		& img {
 			display: block;
+			max-width: 100%;
 		}
 		&--overlay {
 			display: flex;
