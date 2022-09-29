@@ -3,7 +3,7 @@
 	width: 100%;
 	height: 600px;
 	gap: 30px;
-	background: $shadowbackgroundColor url(../images/bg.jpg);
+	background: $shadowbackgroundColor url(/images/bg.jpg);
 	background-image: url();
 	background-blend-mode: darken;
 	box-shadow: 0 4px 4px $shadowbackgroundColor;
@@ -111,7 +111,7 @@
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
 	.background {
-		background-image: url(../../images/bg@2x.jpg);
+		background-image: url(/images/bg@2x.jpg);
 	}
 }
 @media only screen and (min-width: 1200px) {

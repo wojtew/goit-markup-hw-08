@@ -6,7 +6,7 @@
   width: 100%;
   height: 600px;
   gap: 30px;
-  background: rgba(47, 48, 58, 0.4) url(../images/bg.jpg);
+  background: rgba(47, 48, 58, 0.4) url(/images/bg.jpg);
   background-image: url();
   background-blend-mode: darken;
   box-shadow: 0 4px 4px rgba(47, 48, 58, 0.4);
@@ -114,7 +114,7 @@
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .background {
-    background-image: url(../../images/bg@2x.jpg);
+    background-image: url(/images/bg@2x.jpg);
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -668,7 +668,8 @@ h4 {
   letter-spacing: 0.03em;
   color: rgb(33, 33, 33);
   padding: 39px 0 12px 0;
-}/*# sourceMappingURL=main.css.map */margin-left: auto;
+}/*# sourceMappingURL=main.css.map */r;
+    margin-left: auto;
   }
   .navigation__list {
     display: flex;
