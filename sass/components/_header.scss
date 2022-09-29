@@ -28,6 +28,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 16px 16px;
+	border-bottom: 1px solid $contactsColor;
 	&__link {
 		text-decoration: none;
 		color: $logoblackColor;
@@ -74,6 +75,8 @@
 	(min-resolution: 2dppx) {
 	.background {
 		background: $shadowbackgroundColor url(../images/bg@2x.jpg);
+		background-size: cover;
+		background-position: center;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
