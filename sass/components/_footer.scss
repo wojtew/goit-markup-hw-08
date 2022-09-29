@@ -138,3 +138,21 @@
 	width: 24px;
 	height: 24px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.footer {
+		flex-flow: row wrap;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.footer {
+		flex-flow: row nowrap;
+	}
+	.newsletter__form {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.newsletter p {
+		display: flex;
+	}
+}
